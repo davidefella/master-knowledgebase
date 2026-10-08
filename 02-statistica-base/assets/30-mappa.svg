@@ -1,0 +1,43 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 420" width="1000" height="420" font-family="Inter, system-ui, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif">
+<rect width="1000" height="420" fill="#FFFFFF"/>
+<text x="40" y="34" font-size="17" font-weight="700" fill="#232A28">La mappa del corso in una figura</text>
+<text x="40" y="58" font-size="13.5" font-weight="700" fill="#6B7671">Ogni blocco usa il precedente. Il filo che li tiene insieme &#232; sempre lo stesso: la distribuzione.</text>
+<rect x="40" y="92" width="206" height="158" rx="9" fill="#22874C" fill-opacity="0.07" stroke="#22874C" stroke-width="2.2"/>
+<text x="143" y="120" text-anchor="middle" font-size="13" font-weight="700" fill="#22874C">1 &#183; PROBABILIT&#192;</text>
+<line x1="62" y1="132" x2="224" y2="132" stroke="#22874C" stroke-opacity="0.35" stroke-width="1.4"/>
+<text x="143" y="156" text-anchor="middle" font-size="13" fill="#232A28">assiomi e partizioni</text>
+<text x="143" y="182" text-anchor="middle" font-size="13" fill="#232A28">P(A|B) = P(A&#8745;B)/P(B)</text>
+<text x="143" y="208" text-anchor="middle" font-size="13" fill="#232A28">Bayes</text>
+<text x="143" y="236" text-anchor="middle" font-size="12" font-style="italic" fill="#6B7671">le regole del gioco</text>
+<line x1="254" y1="171.0" x2="262" y2="171.0" stroke="#6B7671" stroke-width="2"/>
+<path d="M270,171.0 l-9,-5 l0,10 Z" fill="#6B7671"/>
+<rect x="278" y="92" width="206" height="158" rx="9" fill="#2F6BD8" fill-opacity="0.07" stroke="#2F6BD8" stroke-width="2.2"/>
+<text x="381" y="120" text-anchor="middle" font-size="13" font-weight="700" fill="#2F6BD8">2 &#183; VARIABILI ALEATORIE</text>
+<line x1="300" y1="132" x2="462" y2="132" stroke="#2F6BD8" stroke-opacity="0.35" stroke-width="1.4"/>
+<text x="381" y="156" text-anchor="middle" font-size="13" fill="#232A28">dal caso al numero</text>
+<text x="381" y="182" text-anchor="middle" font-size="13" fill="#232A28">p(a) e f(x)</text>
+<text x="381" y="208" text-anchor="middle" font-size="13" fill="#232A28">cumulativa F</text>
+<text x="381" y="236" text-anchor="middle" font-size="12" font-style="italic" fill="#6B7671">come si descrive l'incerto</text>
+<line x1="492" y1="171.0" x2="500" y2="171.0" stroke="#6B7671" stroke-width="2"/>
+<path d="M508,171.0 l-9,-5 l0,10 Z" fill="#6B7671"/>
+<rect x="516" y="92" width="206" height="158" rx="9" fill="#C2571A" fill-opacity="0.07" stroke="#C2571A" stroke-width="2.2"/>
+<text x="619" y="120" text-anchor="middle" font-size="13" font-weight="700" fill="#C2571A">3 &#183; DESCRITTORI</text>
+<line x1="538" y1="132" x2="700" y2="132" stroke="#C2571A" stroke-opacity="0.35" stroke-width="1.4"/>
+<text x="619" y="156" text-anchor="middle" font-size="13" fill="#232A28">E[x] &#8212; dov'&#232; il centro</text>
+<text x="619" y="182" text-anchor="middle" font-size="13" fill="#232A28">Var &#8212; quanto &#232; larga</text>
+<text x="619" y="208" text-anchor="middle" font-size="13" fill="#232A28">le distribuzioni note</text>
+<text x="619" y="236" text-anchor="middle" font-size="12" font-style="italic" fill="#6B7671">due numeri che riassumono</text>
+<line x1="730" y1="171.0" x2="738" y2="171.0" stroke="#6B7671" stroke-width="2"/>
+<path d="M746,171.0 l-9,-5 l0,10 Z" fill="#6B7671"/>
+<rect x="754" y="92" width="206" height="158" rx="9" fill="#B4341F" fill-opacity="0.07" stroke="#B4341F" stroke-width="2.2"/>
+<text x="857" y="120" text-anchor="middle" font-size="13" font-weight="700" fill="#B4341F">4 &#183; INFERENZA</text>
+<line x1="776" y1="132" x2="938" y2="132" stroke="#B4341F" stroke-opacity="0.35" stroke-width="1.4"/>
+<text x="857" y="156" text-anchor="middle" font-size="13" fill="#232A28">verosimiglianza</text>
+<text x="857" y="182" text-anchor="middle" font-size="13" fill="#232A28">intervalli di confidenza</text>
+<text x="857" y="208" text-anchor="middle" font-size="13" fill="#232A28">test di ipotesi</text>
+<text x="857" y="236" text-anchor="middle" font-size="12" font-style="italic" fill="#6B7671">dai dati al parametro</text>
+<rect x="40" y="284" width="920" height="46" rx="8" fill="#6B4FBB" fill-opacity="0.07" stroke="#6B4FBB" stroke-width="1.8"/>
+<text x="500" y="313" text-anchor="middle" font-size="14" font-weight="700" fill="#6B4FBB">il filo conduttore &#8212; la distribuzione di probabilit&#224; (pdf): tutto il corso &#232; costruirla, descriverla, ricavarla dai dati</text>
+<text x="500" y="368" text-anchor="middle" font-size="13.5" font-weight="700" fill="#232A28">Il ponte fra il blocco 3 e il blocco 4: legge dei grandi numeri e teorema del limite centrale</text>
+<text x="500" y="390" text-anchor="middle" font-size="13" fill="#6B7671">pi&#249; dati raccogli, pi&#249; la media si stringe attorno al valore vero &#8212; e lo fa come una gaussiana di larghezza &#963;/&#8730;n</text>
+</svg>

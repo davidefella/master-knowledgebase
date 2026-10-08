@@ -18,7 +18,7 @@ $$
 Ma nel continuo $`P(X = x)`$ **non è definita**: come visto nel modulo 07, la probabilità di un singolo punto vale zero. La formula darebbe $`0 \times 0 \times \dots = 0`$ per qualsiasi parametro, e non distinguerebbe nulla.
 ---
 ## La soluzione: una finestrella
-![](notion-file-block://51673f03-1544-4535-8f14-d93c7f9a12c1/773df0a8-ef6c-4649-855a-61194a904d99?space_id=98012abc-808d-816f-9733-00030a2b4817&name=21-likelihood-continuo.svg)
+![](assets/21-likelihood-continuo.svg)
 Al posto del punto si prende un intervallino di semiampiezza $`\varepsilon`$ attorno a ciascun dato:
 $$
 L = P(x_1 - \varepsilon \le X_1 \le x_1 + \varepsilon)\cdot P(x_2 - \varepsilon \le X_2 \le x_2 + \varepsilon)\cdots P(x_n - \varepsilon \le X_n \le x_n + \varepsilon)

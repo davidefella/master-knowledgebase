@@ -21,7 +21,7 @@ z = \frac{\bar{X}_n - \mu}{\sigma/\sqrt{n}} \;\sim\; N(0,1)
 $$
 ---
 ## I valori critici
-![](notion-file-block://1090cadf-c93e-47f8-9a4d-8dbd39777667/3649420a-37c6-41ca-bae3-9929eb66ff97?space_id=98012abc-808d-816f-9733-00030a2b4817&name=25-valori-critici.svg)
+![](assets/25-valori-critici.svg)
 Si sceglie la confidenza $`\gamma`$ e si cercano i due tagli $`c_\ell`$ e $`c_u`$ che lasciano dentro quella frazione di probabilità:
 $$
 P(c_\ell < z < c_u) = \gamma

@@ -507,5 +507,5 @@ La lezione si chiude con l'assegnazione dell'esercizio per la volta successiva.
 ---
 ## File allegati
 Il notebook ricostruito dai fotogrammi del video (il file originale del docente, `10-06-2025.ipynb`, non è mai stato distribuito) e il referto della verifica per esecuzione. Il notebook è caricato con estensione `.json` perché Notion non accetta `.ipynb`: dopo il download rinominalo in `.ipynb`.
-<file src="notion-file-block://576ed622-c025-47a3-ae59-2475a520e369/b1241a55-8abd-432f-9aeb-bb6c4891ff95?space_id=98012abc-808d-816f-9733-00030a2b4817&name=giornata-01-tensori-ricostruito.json"></file>
-<file src="notion-file-block://1093ce5a-e31d-441d-8d77-683adc8de786/f886c16d-d70b-438d-8a56-a6f654654c70?space_id=98012abc-808d-816f-9733-00030a2b4817&name=VERIFICA-day-01.md"></file>
+[📎 assets/giornata-01-tensori-ricostruito.json](assets/giornata-01-tensori-ricostruito.json)
+[📎 assets/VERIFICA-day-01.md](assets/VERIFICA-day-01.md)

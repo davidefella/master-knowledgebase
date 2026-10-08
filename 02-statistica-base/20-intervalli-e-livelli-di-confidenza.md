@@ -36,7 +36,7 @@ $$
 </table>
 ---
 ## Che cosa significa davvero
-![](notion-file-block://e164bbc4-56f0-484c-8f15-43cff446227f/4ddfdf01-9739-4d05-9c2c-abda6e717488?space_id=98012abc-808d-816f-9733-00030a2b4817&name=23-confidenza.svg)
+![](assets/23-confidenza.svg)
 <callout icon="⚠️" color="yellow_bg">
 	**L'errore classico.** "C'è il 90% di probabilità che $`\theta`$ stia nel mio intervallo" **non** è la lettura corretta.
 	$`\theta`$ è un numero fisso: o ci sta o non ci sta. La cosa che varia è **l'intervallo**, perché dipende dai dati che ho pescato. Il 90% descrive la **procedura**: applicata tante volte, azzecca 9 volte su 10.

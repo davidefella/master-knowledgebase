@@ -34,7 +34,7 @@ Esempio del docente. Investo **500 €** e ho due possibilità.
 </tr>
 </table>
 I due investimenti hanno **lo stesso valore atteso**, ma nessuno direbbe che sono la stessa cosa. Serve un secondo numero che distingua il caso tranquillo da quello rischioso.
-![](notion-file-block://e528219d-29da-43ba-b5bf-ad221adc4ce2/5dca3304-5d1e-42c5-9d71-c5c9b854e597?space_id=98012abc-808d-816f-9733-00030a2b4817&name=15-investimenti.svg)
+![](assets/15-investimenti.svg)
 ---
 ## Definizione
 Si prende lo scarto dal valore atteso, $`x - E[x]`$, lo si eleva al quadrato e se ne fa il valore atteso:
@@ -77,7 +77,7 @@ $$
 ## La varianza è la larghezza della pdf
 È il modo giusto di leggerla: **la varianza dice quanto è larga la distribuzione**.
 Due gaussiane con lo stesso $`\mu`$ e $`\sigma`$ diverso hanno entrambe area 1 sotto la curva, perché sono entrambe distribuzioni di probabilità. Quindi se una si allarga deve anche abbassarsi.
-![](notion-file-block://93c65d49-b61f-448d-8551-d40d2164e695/d441e78f-41b6-4c79-85f1-be18c2932b0d?space_id=98012abc-808d-816f-9733-00030a2b4817&name=16-gauss-sigma.svg)
+![](assets/16-gauss-sigma.svg)
 ---
 ## Formula operativa
 Per i calcoli si usa quasi sempre questa forma:

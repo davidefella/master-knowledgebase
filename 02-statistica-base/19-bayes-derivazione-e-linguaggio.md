@@ -12,7 +12,7 @@ Nel modulo 02 Bayes era comparso come formula. Qui si vede **da dove viene** e, 
 ---
 ## La derivazione
 Si parte da un evento osservato $`E`$, dal mondo $`\Omega`$ e da una **partizione** di $`\Omega`$: nel caso più semplice due sole ipotesi, $`H`$ e $`\bar{H}`$, con $`\Omega = H \cup \bar{H}`$.
-![](notion-file-block://0cc7e316-a534-4eb8-aabf-a599c94c5912/e543306e-3439-42a4-9dd4-53ddac1494ff?space_id=98012abc-808d-816f-9733-00030a2b4817&name=24-venn-bayes.svg)
+![](assets/24-venn-bayes.svg)
 Poiché la partizione è completa, l'evento $`E`$ si spezza in due pezzi che non si sovrappongono:
 $$
 P(E) = P\big((E \cap H) \cup (E \cap \bar{H})\big) = P(E \cap H) + P(E \cap \bar{H})
@@ -47,7 +47,7 @@ P(E \mid H_i)\, P(H_i) = P(H_i \mid E)\, P(E)
 $$
 ---
 ## I nomi dei pezzi
-![](notion-file-block://900df595-5a02-4944-99fc-5f05cfd6bf48/235dc910-63ee-46e8-8c42-bd38e7a1c58e?space_id=98012abc-808d-816f-9733-00030a2b4817&name=22-ciclo-bayes.svg)
+![](assets/22-ciclo-bayes.svg)
 $$
 P(H_i \mid E) = \frac{P(E \mid H_i)\; P(H_i)}{P(E)}
 $$

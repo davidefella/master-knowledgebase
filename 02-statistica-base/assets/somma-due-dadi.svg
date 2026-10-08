@@ -1,0 +1,39 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 430" width="1000" height="430" font-family="Inter, system-ui, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif">
+<rect width="1000" height="430" fill="#FFFFFF"/>
+<text x="40" y="34" font-size="16" font-weight="700" fill="#232A28">Somma di due dadi &#8212; in quanti modi si ottiene ogni risultato</text>
+<line x1="92" y1="342.0" x2="952" y2="342.0" stroke="#E6E9E6" stroke-width="1"/>
+<text x="78" y="342.0" dy=".35em" text-anchor="end" font-size="12.5" fill="#6B7671">0</text>
+<line x1="92" y1="248.7" x2="952" y2="248.7" stroke="#E6E9E6" stroke-width="1"/>
+<text x="78" y="248.7" dy=".35em" text-anchor="end" font-size="12.5" fill="#6B7671">2</text>
+<line x1="92" y1="155.3" x2="952" y2="155.3" stroke="#E6E9E6" stroke-width="1"/>
+<text x="78" y="155.3" dy=".35em" text-anchor="end" font-size="12.5" fill="#6B7671">4</text>
+<line x1="92" y1="62.0" x2="952" y2="62.0" stroke="#E6E9E6" stroke-width="1"/>
+<text x="78" y="62.0" dy=".35em" text-anchor="end" font-size="12.5" fill="#6B7671">6</text>
+<line x1="92" y1="342" x2="952" y2="342" stroke="#C3C9C4" stroke-width="1.5"/>
+<path d="M92,342.0 L92,299.3 Q92,295.3 96,295.3 L144,295.3 Q148,295.3 148,299.3 L148,342.0 Z" fill="#2F6BD8"/>
+<text x="120.0" y="366" text-anchor="middle" font-size="14" font-weight="700" fill="#232A28">2</text>
+<text x="120.0" y="284.3" text-anchor="middle" font-size="13.5" font-weight="700" fill="#232A28">1</text>
+<path d="M172,342.0 L172,252.7 Q172,248.7 176,248.7 L224,248.7 Q228,248.7 228,252.7 L228,342.0 Z" fill="#2F6BD8"/>
+<text x="200.0" y="366" text-anchor="middle" font-size="14" font-weight="700" fill="#232A28">3</text>
+<path d="M252,342.0 L252,206.0 Q252,202.0 256,202.0 L304,202.0 Q308,202.0 308,206.0 L308,342.0 Z" fill="#2F6BD8"/>
+<text x="280.0" y="366" text-anchor="middle" font-size="14" font-weight="700" fill="#232A28">4</text>
+<path d="M332,342.0 L332,159.3 Q332,155.3 336,155.3 L384,155.3 Q388,155.3 388,159.3 L388,342.0 Z" fill="#2F6BD8"/>
+<text x="360.0" y="366" text-anchor="middle" font-size="14" font-weight="700" fill="#232A28">5</text>
+<path d="M412,342.0 L412,112.7 Q412,108.7 416,108.7 L464,108.7 Q468,108.7 468,112.7 L468,342.0 Z" fill="#2F6BD8"/>
+<text x="440.0" y="366" text-anchor="middle" font-size="14" font-weight="700" fill="#232A28">6</text>
+<path d="M492,342.0 L492,66.0 Q492,62.0 496,62.0 L544,62.0 Q548,62.0 548,66.0 L548,342.0 Z" fill="#2F6BD8"/>
+<text x="520.0" y="366" text-anchor="middle" font-size="14" font-weight="700" fill="#232A28">7</text>
+<text x="520.0" y="51.0" text-anchor="middle" font-size="13.5" font-weight="700" fill="#232A28">6</text>
+<path d="M572,342.0 L572,112.7 Q572,108.7 576,108.7 L624,108.7 Q628,108.7 628,112.7 L628,342.0 Z" fill="#2F6BD8"/>
+<text x="600.0" y="366" text-anchor="middle" font-size="14" font-weight="700" fill="#232A28">8</text>
+<path d="M652,342.0 L652,159.3 Q652,155.3 656,155.3 L704,155.3 Q708,155.3 708,159.3 L708,342.0 Z" fill="#2F6BD8"/>
+<text x="680.0" y="366" text-anchor="middle" font-size="14" font-weight="700" fill="#232A28">9</text>
+<path d="M732,342.0 L732,206.0 Q732,202.0 736,202.0 L784,202.0 Q788,202.0 788,206.0 L788,342.0 Z" fill="#2F6BD8"/>
+<text x="760.0" y="366" text-anchor="middle" font-size="14" font-weight="700" fill="#232A28">10</text>
+<path d="M812,342.0 L812,252.7 Q812,248.7 816,248.7 L864,248.7 Q868,248.7 868,252.7 L868,342.0 Z" fill="#2F6BD8"/>
+<text x="840.0" y="366" text-anchor="middle" font-size="14" font-weight="700" fill="#232A28">11</text>
+<path d="M892,342.0 L892,299.3 Q892,295.3 896,295.3 L944,295.3 Q948,295.3 948,299.3 L948,342.0 Z" fill="#2F6BD8"/>
+<text x="920.0" y="366" text-anchor="middle" font-size="14" font-weight="700" fill="#232A28">12</text>
+<text x="920.0" y="284.3" text-anchor="middle" font-size="13.5" font-weight="700" fill="#232A28">1</text>
+<text x="40" y="398" font-size="13.5" fill="#6B7671">Il 7 si ottiene in 6 modi su 36, il 2 e il 12 in un modo solo: i dadi sono uniformi, la loro somma no.</text>
+</svg>

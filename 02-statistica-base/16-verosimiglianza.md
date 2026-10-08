@@ -91,7 +91,7 @@ Moltiplicando le probabilità di tutte le donne osservate si ottiene la **probab
 	**Il principio.** $`p`$ è il valore che **massimizza la probabilità di ottenere la realizzazione osservata**.
 	In altre parole: fra tutte le spiegazioni possibili, scelgo quella sotto cui quello che ho visto era la cosa meno sorprendente.
 </callout>
-![](notion-file-block://67dbefda-7f36-4427-b549-a83e8b0dded6/df5e0b90-c9d0-47f7-a728-2c92960ed416?space_id=98012abc-808d-816f-9733-00030a2b4817&name=19-likelihood.svg)
+![](assets/19-likelihood.svg)
 <details>
 <summary>Il conto per le fumatrici, in breve</summary>
 	Moltiplicando i contributi di tutte le 100 donne, la verosimiglianza è:

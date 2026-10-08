@@ -78,7 +78,7 @@ $$
 $$
 ---
 ## Il risultato letto sul disegno
-![](notion-file-block://adf3746e-36a1-4053-97ff-cafd47605afc/30d54a4e-f3a4-4d43-84ec-18d57ba9dbb9?space_id=98012abc-808d-816f-9733-00030a2b4817&name=29-autovelox.svg)
+![](assets/29-autovelox.svg)
 <callout icon="💡" color="blue_bg">
 	**\[integrazione\] È il motivo per cui la multa non scatta a 130,1.** La tolleranza applicata agli autovelox non è un favore all'automobilista: è il margine che serve perché lo strumento non condanni chi era davvero nei limiti. La statistica dice dove metterlo.
 </callout>

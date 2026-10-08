@@ -16,7 +16,7 @@ salaries = [1200, 1280, 1300, ..., 80000, 80000, 500000]
 ### Media aritmetica
 $`\bar{x} = \frac{\sum_{i=1}^{n} x_i}{n}`$
 $`\bar{x}`$ ("x barra") è la **media**, il simbolo $`\sum`$ significa "*somma tutto*". Quindi: somma tutti i valori e dividi per $`n`$ (quanti sono). La somma di tutti i valori divisa per il numero di osservazioni. 
-![](notion-file-block://33012abc-808d-8024-95b4-e8b8426f1c47/0200dfb2-378f-4d6c-90a7-9e3b7f139721?space_id=98012abc-808d-816f-9733-00030a2b4817&name=image.png)
+![](assets/statistica-descrittiva-01.png)
 > ⚠️ **Problema con gli outlier:** il CEO da €500K trascina la media a €22.486K. Nessun dipendente "*medio*" guadagna quella cifra, è un numero che non rappresenta nessuno.
 ```python
 import statistics
@@ -50,7 +50,7 @@ for idx in top3_idx:
 ---
 ### Mediana
 Il valore **centrale** quando i dati sono **ordinati**. Se n è pari, è la media dei due valori centrali.Non risente degli *outlier* perché dipende solo dalla posizione, non dal valore.
-![](notion-file-block://33012abc-808d-80cd-b500-fc196de0dd38/5879efad-6082-4f06-9417-75c8ea7d5c47?space_id=98012abc-808d-816f-9733-00030a2b4817&name=image.png)
+![](assets/statistica-descrittiva-02.png)
 > ✅ Per gli stipendi, la mediana (€2.300K) è la misura più onesta: metà dei dipendenti guadagna meno, metà guadagna di più.
 <details>
 <summary>Come si calcola a mano su n pari</summary>
@@ -69,7 +69,7 @@ print(np.median(salaries))          # 2300.0 — identico, restituisce float
 > **Come si legge:** $`\alpha`$ è la percentuale da tagliare (es. 0.1 = 10%). $`\lfloor\alpha n\rfloor`$ è quanti valori rimuovere per lato (arrotondato per difetto). In parole: **ordina i dati, taglia x% dagli estremi, fai la media sul resto**.
 Rimuove una percentuale fissa degli estremi **da entrambi i lati**, poi calcola la media aritmetica sul resto.
 $`\bar{x}_{trim} = \frac{1}{n - 2\lfloor\alpha n\rfloor} \sum_{i=\lfloor\alpha n\rfloor+1}^{n-\lfloor\alpha n\rfloor} x_{(i)}`$
-![](notion-file-block://33012abc-808d-805d-b54f-f77bfd165c58/202e1e1a-2c84-44ee-bdbd-226131f503db?space_id=98012abc-808d-816f-9733-00030a2b4817&name=image.png)
+![](assets/statistica-descrittiva-03.png)
 > Utile quando gli outlier sono sistematici (non errori di misura) e vuoi comunque una media robusta.
 ```python
 from scipy.stats import trim_mean
@@ -82,7 +82,7 @@ print(trim_mean(salaries, proportiontocut=0.1))  # 6737 — rimuove 10% per lato
 > **Come si legge:** moltiplica ogni valore per il suo peso, somma tutto, poi dividi per la somma dei pesi. In parole: **i valori con peso maggiore tirano di più la media**.
 Quando le osservazioni **non hanno tutte la stessa importanza**.
 $`\bar{x}_w = \frac{\sum_{i=1}^{n} x_i \cdot w_i}{\sum_{i=1}^{n} w_i}`$
-![](notion-file-block://33012abc-808d-8064-9697-f2e0cbb9b48f/b5f2487c-4a3b-457d-98a8-065d827314dc?space_id=98012abc-808d-816f-9733-00030a2b4817&name=image.png)
+![](assets/statistica-descrittiva-04.png)
 > Nel nostro dataset, pesare per esperienza gonfia ulteriormente il risultato perché i senior (e il CEO) hanno stipendi molto più alti.
 > **Perché non ****`statistics`****?** Il modulo stdlib `statistics` non ha una funzione per la media pesata — `statistics.mean()` tratta tutti i valori con peso uguale. Serve `numpy.average(data, weights=w)`. In alternativa puoi calcolarla a mano: `sum(x*w for x,w in zip(data, weights)) / sum(weights)`, ma `np.average` è lo standard.
 	```python
@@ -98,7 +98,7 @@ print(np.average(salaries, weights=weights))  # 62440 — alta per i pesi dei se
 > **<span discussion-urls="discussion://32f12abc-808d-8185-b36f-f5b3faabe965/802d2e06-58ee-4acc-a256-bac83df17148/33c12abc-808d-809b-bf49-001cab2272f2">Come si legge:</span>**<span discussion-urls="discussion://32f12abc-808d-8185-b36f-f5b3faabe965/802d2e06-58ee-4acc-a256-bac83df17148/33c12abc-808d-809b-bf49-001cab2272f2"> </span>$`\prod`$<span discussion-urls="discussion://32f12abc-808d-8185-b36f-f5b3faabe965/802d2e06-58ee-4acc-a256-bac83df17148/33c12abc-808d-809b-bf49-001cab2272f2"> significa "moltiplica tutti i valori insieme", poi prendi la radice n-esima. Con 3 valori: ∛(x₁ · x₂ · x₃). In parole: </span>**<span discussion-urls="discussion://32f12abc-808d-8185-b36f-f5b3faabe965/802d2e06-58ee-4acc-a256-bac83df17148/33c12abc-808d-809b-bf49-001cab2272f2">moltiplica tutto e prendi la radice</span>**<span discussion-urls="discussion://32f12abc-808d-8185-b36f-f5b3faabe965/802d2e06-58ee-4acc-a256-bac83df17148/33c12abc-808d-809b-bf49-001cab2272f2">. La versione con </span>$`\exp`$<span discussion-urls="discussion://32f12abc-808d-8185-b36f-f5b3faabe965/802d2e06-58ee-4acc-a256-bac83df17148/33c12abc-808d-809b-bf49-001cab2272f2"> e </span>$`\ln`$<span discussion-urls="discussion://32f12abc-808d-8185-b36f-f5b3faabe965/802d2e06-58ee-4acc-a256-bac83df17148/33c12abc-808d-809b-bf49-001cab2272f2"> è equivalente ma evita overflow coi numeri grandi — non serve capirla per usarla.</span>
 La radice n-esima del prodotto di tutti i valori.
 $`G = \left(\prod_{i=1}^{n} x_i\right)^{1/n} = \exp\left(\frac{1}{n}\sum_{i=1}^{n} \ln x_i\right)`$
-![](notion-file-block://33012abc-808d-8012-99a9-cae02908dd52/6a0c306f-bb7a-4d08-996a-d138b0e8fc55?space_id=98012abc-808d-816f-9733-00030a2b4817&name=image.png)
+![](assets/statistica-descrittiva-05.png)
 > **Quando usarla:** crescita composta, rendimenti finanziari, rapporti. Se hai un investimento che cresce del 10%, poi del -5%, poi del 20%, la media geometrica dei fattori di crescita ti dà il rendimento annuo corretto.
 <details>
 <summary>Esempio: rendimento medio di un investimento</summary>
@@ -133,7 +133,7 @@ print(gmean(salaries))  # ~5200 — smorzata rispetto all'aritmetica, più alta 
 > **Come si legge:** il reciproco di ogni valore è 1/xᵢ (es. 1/60 = 0.0167). Somma tutti i reciproci, poi dividi n per quella somma. In parole: **inverti ogni valore, fai la media, inverti di nuovo**.
 Il reciproco della media aritmetica dei reciproci.
 $`H = \frac{n}{\sum_{i=1}^{n} \frac{1}{x_i}}`$
-![](notion-file-block://33012abc-808d-8021-985b-c85dd11d2624/eac14885-facf-4a04-b894-36d1f19754b0?space_id=98012abc-808d-816f-9733-00030a2b4817&name=image.png)
+![](assets/statistica-descrittiva-06.png)
 > **Differenza con la media pesata:** nella media pesata i pesi li scegli tu esplicitamente in base all'importanza di ogni osservazione. Nella media armonica i pesi emergono automaticamente dalla struttura matematica: i valori più piccoli hanno reciproco più grande, quindi pesano di più — senza che tu lo decida. Nel caso delle velocità, questo riflette il fatto che passi oggettivamente più tempo alla velocità bassa
 > **Quando usarla:** medie di velocità, rate, rapporti inversi. Se percorri 100km a 60 km/h e altri 100km a 120 km/h, la velocità media non è (60+120)/2 = 90 km/h — è la media armonica = 80 km/h.
 <details>
@@ -161,7 +161,7 @@ print(statistics.harmonic_mean(salaries))  # ~1860 — ancora più bassa della m
 ---
 ### Moda
 Il valore (o i valori) che compaiono **più frequentemente**.
-![](notion-file-block://33012abc-808d-80fe-a35c-e54b49092780/b4434fdc-7b54-420e-be8b-cf579674c2cf?space_id=98012abc-808d-816f-9733-00030a2b4817&name=image.png)
+![](assets/statistica-descrittiva-07.png)
 > Unica misura applicabile a dati **categorici** (es. linguaggio preferito, sistema operativo). Funziona anche su dati **discreti con poche varianti** (es. numero di figli). Su dati continui è quasi inutile: difficilmente due misure coincidono esattamente, quindi ogni valore ha frequenza 1.
 ```python
 print(statistics.mode([10, 20, 30, 30, 40, 50, 50, 50]))  # 50
@@ -220,8 +220,8 @@ print(result.count)  # 3 — frequenza della moda
 ---
 ## Misure di dispersione
 Tendenza centrale e dispersione vanno sempre insieme: due dataset possono avere la stessa media ma distribuzioni completamente diverse.
-![](notion-file-block://33012abc-808d-80e6-96ab-cb66bea97063/4eea3528-fa70-415f-afce-9270b1707b38?space_id=98012abc-808d-816f-9733-00030a2b4817&name=image.png)
-![](notion-file-block://33012abc-808d-8053-8f08-df36352706e8/f70fdecb-611e-4add-86f0-d9904a90dc54?space_id=98012abc-808d-816f-9733-00030a2b4817&name=image.png)
+![](assets/statistica-descrittiva-08.png)
+![](assets/statistica-descrittiva-09.png)
 <table header-row="true">
 <tr>
 <td>Misura</td>

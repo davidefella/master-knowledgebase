@@ -1,0 +1,71 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 360" width="1000" height="360" font-family="Inter, system-ui, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif">
+<rect width="1000" height="360" fill="#FFFFFF"/>
+<text x="40" y="34" font-size="16" font-weight="700" fill="#232A28">Come nasce la Poisson &#8212; l'intervallo T spezzato in tanti intervallini</text>
+<line x1="90" y1="110" x2="910" y2="110" stroke="#C3C9C4" stroke-width="2"/>
+<line x1="147.4" y1="94" x2="147.4" y2="126" stroke="#B4341F" stroke-width="2.6"/>
+<line x1="262.2" y1="94" x2="262.2" y2="126" stroke="#B4341F" stroke-width="2.6"/>
+<line x1="311.4" y1="94" x2="311.4" y2="126" stroke="#B4341F" stroke-width="2.6"/>
+<line x1="450.8" y1="94" x2="450.8" y2="126" stroke="#B4341F" stroke-width="2.6"/>
+<line x1="516.4" y1="94" x2="516.4" y2="126" stroke="#B4341F" stroke-width="2.6"/>
+<line x1="606.6" y1="94" x2="606.6" y2="126" stroke="#B4341F" stroke-width="2.6"/>
+<line x1="737.8" y1="94" x2="737.8" y2="126" stroke="#B4341F" stroke-width="2.6"/>
+<line x1="795.2" y1="94" x2="795.2" y2="126" stroke="#B4341F" stroke-width="2.6"/>
+<text x="90" y="144" font-size="13" font-weight="700" fill="#232A28">0</text>
+<text x="910" y="144" text-anchor="end" font-size="13" font-weight="700" fill="#232A28">T</text>
+<text x="90" y="78" font-size="13.5" font-weight="700" fill="#B4341F">i reclami arrivano quando capita, in media &#955; all'ora</text>
+<text x="90" y="188" font-size="13.5" font-weight="700" fill="#2F6BD8">spezzo T in n intervallini cos&#236; piccoli che dentro ognuno c'&#232; 0 oppure 1 reclamo</text>
+<rect x="90.0" y="214" width="17.2" height="32" fill="#FFFFFF" stroke="#C3C9C4" stroke-width="1"/>
+<rect x="108.6" y="214" width="17.2" height="32" fill="#FFFFFF" stroke="#C3C9C4" stroke-width="1"/>
+<rect x="127.3" y="214" width="17.2" height="32" fill="#FFFFFF" stroke="#C3C9C4" stroke-width="1"/>
+<rect x="145.9" y="214" width="17.2" height="32" fill="#2F6BD8" stroke="#C3C9C4" stroke-width="1"/>
+<text x="155.2" y="235" text-anchor="middle" font-size="11.5" font-weight="700" fill="#FFFFFF">1</text>
+<rect x="164.5" y="214" width="17.2" height="32" fill="#FFFFFF" stroke="#C3C9C4" stroke-width="1"/>
+<rect x="183.2" y="214" width="17.2" height="32" fill="#FFFFFF" stroke="#C3C9C4" stroke-width="1"/>
+<rect x="201.8" y="214" width="17.2" height="32" fill="#FFFFFF" stroke="#C3C9C4" stroke-width="1"/>
+<rect x="220.5" y="214" width="17.2" height="32" fill="#FFFFFF" stroke="#C3C9C4" stroke-width="1"/>
+<rect x="239.1" y="214" width="17.2" height="32" fill="#FFFFFF" stroke="#C3C9C4" stroke-width="1"/>
+<rect x="257.7" y="214" width="17.2" height="32" fill="#2F6BD8" stroke="#C3C9C4" stroke-width="1"/>
+<text x="267.0" y="235" text-anchor="middle" font-size="11.5" font-weight="700" fill="#FFFFFF">1</text>
+<rect x="276.4" y="214" width="17.2" height="32" fill="#FFFFFF" stroke="#C3C9C4" stroke-width="1"/>
+<rect x="295.0" y="214" width="17.2" height="32" fill="#2F6BD8" stroke="#C3C9C4" stroke-width="1"/>
+<text x="304.3" y="235" text-anchor="middle" font-size="11.5" font-weight="700" fill="#FFFFFF">1</text>
+<rect x="313.6" y="214" width="17.2" height="32" fill="#FFFFFF" stroke="#C3C9C4" stroke-width="1"/>
+<rect x="332.3" y="214" width="17.2" height="32" fill="#FFFFFF" stroke="#C3C9C4" stroke-width="1"/>
+<rect x="350.9" y="214" width="17.2" height="32" fill="#FFFFFF" stroke="#C3C9C4" stroke-width="1"/>
+<rect x="369.5" y="214" width="17.2" height="32" fill="#FFFFFF" stroke="#C3C9C4" stroke-width="1"/>
+<rect x="388.2" y="214" width="17.2" height="32" fill="#FFFFFF" stroke="#C3C9C4" stroke-width="1"/>
+<rect x="406.8" y="214" width="17.2" height="32" fill="#FFFFFF" stroke="#C3C9C4" stroke-width="1"/>
+<rect x="425.5" y="214" width="17.2" height="32" fill="#FFFFFF" stroke="#C3C9C4" stroke-width="1"/>
+<rect x="444.1" y="214" width="17.2" height="32" fill="#2F6BD8" stroke="#C3C9C4" stroke-width="1"/>
+<text x="453.4" y="235" text-anchor="middle" font-size="11.5" font-weight="700" fill="#FFFFFF">1</text>
+<rect x="462.7" y="214" width="17.2" height="32" fill="#FFFFFF" stroke="#C3C9C4" stroke-width="1"/>
+<rect x="481.4" y="214" width="17.2" height="32" fill="#FFFFFF" stroke="#C3C9C4" stroke-width="1"/>
+<rect x="500.0" y="214" width="17.2" height="32" fill="#2F6BD8" stroke="#C3C9C4" stroke-width="1"/>
+<text x="509.3" y="235" text-anchor="middle" font-size="11.5" font-weight="700" fill="#FFFFFF">1</text>
+<rect x="518.6" y="214" width="17.2" height="32" fill="#FFFFFF" stroke="#C3C9C4" stroke-width="1"/>
+<rect x="537.3" y="214" width="17.2" height="32" fill="#FFFFFF" stroke="#C3C9C4" stroke-width="1"/>
+<rect x="555.9" y="214" width="17.2" height="32" fill="#FFFFFF" stroke="#C3C9C4" stroke-width="1"/>
+<rect x="574.5" y="214" width="17.2" height="32" fill="#FFFFFF" stroke="#C3C9C4" stroke-width="1"/>
+<rect x="593.2" y="214" width="17.2" height="32" fill="#2F6BD8" stroke="#C3C9C4" stroke-width="1"/>
+<text x="602.5" y="235" text-anchor="middle" font-size="11.5" font-weight="700" fill="#FFFFFF">1</text>
+<rect x="611.8" y="214" width="17.2" height="32" fill="#FFFFFF" stroke="#C3C9C4" stroke-width="1"/>
+<rect x="630.5" y="214" width="17.2" height="32" fill="#FFFFFF" stroke="#C3C9C4" stroke-width="1"/>
+<rect x="649.1" y="214" width="17.2" height="32" fill="#FFFFFF" stroke="#C3C9C4" stroke-width="1"/>
+<rect x="667.7" y="214" width="17.2" height="32" fill="#FFFFFF" stroke="#C3C9C4" stroke-width="1"/>
+<rect x="686.4" y="214" width="17.2" height="32" fill="#FFFFFF" stroke="#C3C9C4" stroke-width="1"/>
+<rect x="705.0" y="214" width="17.2" height="32" fill="#FFFFFF" stroke="#C3C9C4" stroke-width="1"/>
+<rect x="723.6" y="214" width="17.2" height="32" fill="#2F6BD8" stroke="#C3C9C4" stroke-width="1"/>
+<text x="733.0" y="235" text-anchor="middle" font-size="11.5" font-weight="700" fill="#FFFFFF">1</text>
+<rect x="742.3" y="214" width="17.2" height="32" fill="#FFFFFF" stroke="#C3C9C4" stroke-width="1"/>
+<rect x="760.9" y="214" width="17.2" height="32" fill="#FFFFFF" stroke="#C3C9C4" stroke-width="1"/>
+<rect x="779.5" y="214" width="17.2" height="32" fill="#2F6BD8" stroke="#C3C9C4" stroke-width="1"/>
+<text x="788.9" y="235" text-anchor="middle" font-size="11.5" font-weight="700" fill="#FFFFFF">1</text>
+<rect x="798.2" y="214" width="17.2" height="32" fill="#FFFFFF" stroke="#C3C9C4" stroke-width="1"/>
+<rect x="816.8" y="214" width="17.2" height="32" fill="#FFFFFF" stroke="#C3C9C4" stroke-width="1"/>
+<rect x="835.5" y="214" width="17.2" height="32" fill="#FFFFFF" stroke="#C3C9C4" stroke-width="1"/>
+<rect x="854.1" y="214" width="17.2" height="32" fill="#FFFFFF" stroke="#C3C9C4" stroke-width="1"/>
+<rect x="872.7" y="214" width="17.2" height="32" fill="#FFFFFF" stroke="#C3C9C4" stroke-width="1"/>
+<rect x="891.4" y="214" width="17.2" height="32" fill="#FFFFFF" stroke="#C3C9C4" stroke-width="1"/>
+<text x="90" y="272" font-size="13" fill="#6B7671">ognuno &#232; un lancio di monetina: esce &#8220;reclamo&#8221; con probabilit&#224; p = &#955;T/n</text>
+<text x="90" y="294" font-size="13" fill="#6B7671">n lanci indipendenti &#8594; il totale &#232; una Binomiale. Facendo n &#8594; &#8734; la Binomiale diventa la Poisson.</text>
+</svg>

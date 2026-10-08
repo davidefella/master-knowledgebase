@@ -136,7 +136,7 @@ $$
 ---
 ## Il punto vero
 I due dadi sono **equi**: ogni faccia ha probabilità $`1/6`$, tutte uguali. Ma la somma **non è affatto uniforme**.
-![](notion-file-block://be00ada0-c820-4123-9729-138ecf96b682/5979fecf-f8d7-4acd-8bb0-aa8d67db3c23?space_id=98012abc-808d-816f-9733-00030a2b4817&name=somma-due-dadi.svg)
+![](assets/somma-due-dadi.svg)
 Il 7 esce sei volte più spesso del 2, perché il 2 si ottiene in un solo modo (1+1) mentre il 7 in sei modi (1+6, 2+5, 3+4, 4+3, 5+2, 6+1).
 E il massimo è sbilanciato ancora di più, in un'altra direzione:
 <table fit-page-width="true" header-row="true">

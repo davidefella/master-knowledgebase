@@ -36,7 +36,7 @@ $$
 P(a \le x \le b) = \int_a^b f(x)\,dx
 $$
 L'integrale è la versione continua della somma: nel discreto si sommavano le $`p(a_i)`$ una per una, qui si "somma" $`f(x)`$ lungo tutto l'intervallo da $`a`$ a $`b`$. E l'intervallo $`(a,b)`$ può essere uno qualsiasi.
-![](notion-file-block://2de3a6fe-5774-401a-a2bd-787b49cc52c9/d1b00264-d06c-403f-87fa-92daa8f32c04?space_id=98012abc-808d-816f-9733-00030a2b4817&name=densita-continua.svg)
+![](assets/densita-continua.svg)
 ---
 ## Perché si chiama densità e non probabilità
 Prendiamo una fascia molto stretta attorno ad $`a`$, larga $`2\varepsilon`$ con $`\varepsilon`$ piccolo:

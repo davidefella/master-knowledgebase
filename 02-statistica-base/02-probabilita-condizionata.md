@@ -182,7 +182,7 @@ Nella prima non sai nulla e chiedi che si verifichino entrambe le condizioni. Ne
 ## Condizionare = restringere il campo
 Questa è tutta l'idea. **"Dato **$`L`$**" significa che qualcuno ti ha già detto qualcosa, e tu butti via tutto il resto.**
 Prima non sai niente: i mesi possibili sono 12. Poi ti dicono "è nato in un mese lungo": da quel momento gli altri cinque mesi smettono di esistere. Restano 7 candidati, e fra questi conti quanti hanno la r.
-![](notion-file-block://c7abbb23-01be-4ce8-ac27-1f19c6ffd5e1/349b9246-0cbc-4364-be5d-df34716c2a62?space_id=98012abc-808d-816f-9733-00030a2b4817&name=condizionata-mesi.svg)
+![](assets/condizionata-mesi.svg)
 Quattro sì su sette candidati:
 $$
 P(r \mid L) = \tfrac{4}{7} \approx 57\%
@@ -327,7 +327,7 @@ Prendi un evento $`A`$ qualsiasi e una partizione $`C_1, C_2, \dots, C_n`$ di $`
 $$
 A = (A \cap C_1) \cup (A \cap C_2) \cup \dots \cup (A \cap C_n)
 $$
-![](notion-file-block://e469ed60-c940-466a-b92b-abadb691a0c2/b3a678e9-950a-42d6-90f9-de36a4a0822d?space_id=98012abc-808d-816f-9733-00030a2b4817&name=probabilita-totale.svg)
+![](assets/probabilita-totale.svg)
 Le due regole della partizione sono esattamente ciò che rende il taglio pulito:
 - **mutuamente esclusivi** → i pezzi non si sovrappongono, quindi le loro probabilità si possono **sommare** (assioma 3 del modulo 01)
 - **esaustivi** → nessuna parte di $`A`$ resta fuori, quindi la somma ricostruisce $`A`$ per intero

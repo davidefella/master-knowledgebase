@@ -5,7 +5,7 @@
 <table_of_contents color="gray"/>
 Tutto il corso in una pagina. Ogni concetto: la formula, cosa vuol dire, l'esempio, e la trappola in cui si casca.
 In fondo, gli stessi dieci concetti rifatti su **un unico caso di studio: una serata di tombola**.
-![](notion-file-block://bbcb327a-8f1a-49ed-a7f0-f8f5112936a3/abb1b359-d728-4ce1-967c-c1fe8afd4773?space_id=98012abc-808d-816f-9733-00030a2b4817&name=30-mappa.svg)
+![](assets/30-mappa.svg)
 ---
 ## 1. Probabilità condizionata
 $$
@@ -183,7 +183,7 @@ $$
 ---
 # 🎱 Il caso di studio: una serata di tombola
 Gli stessi dieci concetti, nello stesso ordine, su un unico esempio. Sacchetto da 90 numeri, la mia cartella ne ha 15.
-![](notion-file-block://1c94ae6a-2991-4808-99aa-9426ec8f6405/ab88e1ce-f9d9-452d-841f-d5f2c4598b81?space_id=98012abc-808d-816f-9733-00030a2b4817&name=31-cartella.svg)
+![](assets/31-cartella.svg)
 ---
 ## ① Condizionata — sono uscite 20 estrazioni e nessuna è mia
 All'inizio della partita la probabilità che il numero estratto sia sulla mia cartella è:

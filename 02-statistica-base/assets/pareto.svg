@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 420" width="1000" height="420" font-family="Inter, system-ui, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif">
+<rect width="1000" height="420" fill="#FFFFFF"/>
+<text x="40" y="36" font-size="16" font-weight="700" fill="#232A28">Distribuzione di Pareto &#8212; f(x) = &#945;/x^(&#945;+1), esempio con &#945; = 2</text>
+<line x1="110" y1="320" x2="916" y2="320" stroke="#C3C9C4" stroke-width="1.5"/>
+<line x1="110" y1="320" x2="110" y2="74" stroke="#C3C9C4" stroke-width="1.5"/>
+<path d="M373.3,320 L373.3,316.4 L399.7,317.1 L426.0,317.6 L452.3,318.0 L478.7,318.4 L505.0,318.6 L531.3,318.8 L557.7,319.0 L584.0,319.1 L610.3,319.2 L636.7,319.3 L663.0,319.4 L689.3,319.5 L715.7,319.5 L742.0,319.6 L768.3,319.6 L794.7,319.7 L821.0,319.7 L847.3,319.7 L873.7,319.7 L900.0,319.8 L900.0,320 Z" fill="#2F6BD8" opacity=".16"/>
+<path d="M110.0,90.0 L113.9,118.5 L117.9,142.4 L121.8,162.7 L125.8,180.0 L129.8,194.9 L133.7,207.7 L137.7,218.9 L141.6,228.6 L145.6,237.1 L149.5,244.6 L153.5,251.2 L157.4,257.0 L161.3,262.2 L165.3,266.9 L169.2,271.1 L173.2,274.8 L177.2,278.2 L181.1,281.2 L185.1,284.0 L189.0,286.5 L192.9,288.7 L196.9,290.8 L200.9,292.7 L204.8,294.4 L208.8,296.0 L212.7,297.5 L216.6,298.8 L220.6,300.1 L224.5,301.2 L228.5,302.3 L232.4,303.3 L236.4,304.2 L240.3,305.0 L244.3,305.8 L248.3,306.5 L252.2,307.2 L256.1,307.8 L260.1,308.4 L264.0,309.0 L268.0,309.5 L271.9,310.0 L275.9,310.5 L279.8,310.9 L283.8,311.3 L287.8,311.7 L291.7,312.1 L295.6,312.4 L299.6,312.7 L303.6,313.0 L307.5,313.3 L311.4,313.6 L315.4,313.8 L319.4,314.1 L323.3,314.3 L327.2,314.5 L331.2,314.7 L335.1,314.9 L339.1,315.1 L343.0,315.3 L347.0,315.5 L351.0,315.6 L354.9,315.8 L358.9,315.9 L362.8,316.1 L366.8,316.2 L370.7,316.3 L378.6,316.6 L386.5,316.8 L394.4,317.0 L402.3,317.2 L410.2,317.3 L418.1,317.5 L426.0,317.6 L433.9,317.8 L441.8,317.9 L449.7,318.0 L457.6,318.1 L465.5,318.2 L473.4,318.3 L481.3,318.4 L489.2,318.5 L497.1,318.5 L505.0,318.6 L512.9,318.7 L520.8,318.7 L528.7,318.8 L536.6,318.9 L544.5,318.9 L552.4,319.0 L560.3,319.0 L568.2,319.0 L576.1,319.1 L584.0,319.1 L591.9,319.2 L599.8,319.2 L607.7,319.2 L615.6,319.3 L623.5,319.3 L631.4,319.3 L639.3,319.3 L647.2,319.4 L655.1,319.4 L663.0,319.4 L670.9,319.4 L678.8,319.5 L686.7,319.5 L694.6,319.5 L702.5,319.5 L710.4,319.5 L718.3,319.5 L726.2,319.6 L734.1,319.6 L742.0,319.6 L749.9,319.6 L757.8,319.6 L765.7,319.6 L773.6,319.6 L781.5,319.6 L789.4,319.7 L797.3,319.7 L805.2,319.7 L813.1,319.7 L821.0,319.7 L828.9,319.7 L836.8,319.7 L844.7,319.7 L852.6,319.7 L860.5,319.7 L868.4,319.7 L876.3,319.8 L884.2,319.8 L892.1,319.8 L900.0,319.8" fill="none" stroke="#2F6BD8" stroke-width="3"/>
+<text x="110" y="342" text-anchor="middle" font-size="12.5" fill="#232A28">1</text>
+<text x="198" y="342" text-anchor="middle" font-size="12.5" fill="#232A28">2</text>
+<text x="373" y="342" text-anchor="middle" font-size="12.5" fill="#232A28">4</text>
+<text x="549" y="342" text-anchor="middle" font-size="12.5" fill="#232A28">6</text>
+<text x="724" y="342" text-anchor="middle" font-size="12.5" fill="#232A28">8</text>
+<text x="900" y="342" text-anchor="middle" font-size="12.5" fill="#232A28">10</text>
+<text x="98" y="90" dy=".35em" text-anchor="end" font-size="12.5" fill="#6B7671">2</text>
+<text x="98" y="205" dy=".35em" text-anchor="end" font-size="12.5" fill="#6B7671">1</text>
+<text x="98" y="320" dy=".35em" text-anchor="end" font-size="12.5" fill="#6B7671">0</text>
+<text x="98" y="66" font-size="14" font-weight="700" fill="#2F6BD8">f(x)</text>
+<text x="573" y="298" text-anchor="middle" font-size="13" font-weight="700" fill="#1B4FA8">coda</text>
+<text x="40" y="372" font-size="13.5" fill="#6B7671">Quasi tutta la massa sta a sinistra, ma la curva scende come una potenza, non esponenzialmente:</text>
+<text x="40" y="396" font-size="13.5" fill="#6B7671">i valori molto grandi restano molto pi&#249; probabili che in altre distribuzioni. &#200; l&#8217;effetto &#171;pochi ne hanno tantissimo&#187;.</text>
+</svg>

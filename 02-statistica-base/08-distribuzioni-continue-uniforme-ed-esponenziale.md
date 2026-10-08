@@ -38,7 +38,7 @@ Integrando si ottiene la cumulativa, che cresce come una retta:
 $$
 F(x) = \frac{x-a}{b-a}
 $$
-![](notion-file-block://472a37ad-cc4d-419c-b4c2-03d034447313/794cd3b4-c5c0-487d-b3aa-c22d45261df4?space_id=98012abc-808d-816f-9733-00030a2b4817&name=uniforme-f-e-F.svg)
+![](assets/uniforme-f-e-F.svg)
 **Con** $`a = 3`$ **e** $`b = 8`$: la densità vale $`1/5 = 0{,}2`$ su tutto l'intervallo, e la cumulativa passa da 0 a 1 in modo lineare.
 <details>
 <summary>Perché l'integrale si spezza in tre pezzi</summary>
@@ -80,7 +80,7 @@ e la densità si ottiene derivando la cumulativa, come visto nel modulo preceden
 $$
 f(t) = \frac{d}{dt}\left(1 - e^{-\lambda t}\right) = \lambda e^{-\lambda t}
 $$
-![](notion-file-block://2f92af9b-1dff-4f3d-9288-dfe093bdb5cd/9a8286a9-9ac6-4f20-b853-7f33c8bca030?space_id=98012abc-808d-816f-9733-00030a2b4817&name=esponenziale-f-e-F.svg)
+![](assets/esponenziale-f-e-F.svg)
 > **Come si legge il grafico di sinistra.** È più probabile aspettare poco che aspettare molto, e la probabilità cala senza mai azzerarsi del tutto: un'attesa lunghissima è rarissima ma non impossibile.
 ---
 ## Le due a confronto

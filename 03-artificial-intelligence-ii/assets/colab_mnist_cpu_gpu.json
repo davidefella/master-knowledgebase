@@ -1,0 +1,137 @@
+{
+ "cells": [
+  {
+   "cell_type": "markdown",
+   "id": "57446806",
+   "metadata": {},
+   "source": [
+    "# MNIST on Google Colab (CPU or GPU)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "fff250d2",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "import tensorflow as tf\n",
+    "import tensorflow_datasets as tfds"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "fcadfcd9",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "print(\"TensorFlow:\", tf.__version__)\n",
+    "print(\"Physical devices:\", tf.config.list_physical_devices())\n",
+    "print(\"Visible devices:\", tf.config.get_visible_devices())"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "4eacb48e",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "def get_dataset(batch_size, is_training=True):\n",
+    "  if is_training:\n",
+    "    dataset, info = tfds.load(name='mnist', split='train', with_info=True,\n",
+    "                            as_supervised=True, try_gcs=True)\n",
+    "  else:\n",
+    "    dataset = tfds.load(name='mnist', split='test',\n",
+    "                        as_supervised=True, try_gcs=True)\n",
+    "\n",
+    "  # Normalize the input data.\n",
+    "  def scale(image, label):\n",
+    "    image = tf.cast(image, tf.float32)\n",
+    "    image /= 255.0\n",
+    "    return image, label\n",
+    "\n",
+    "  dataset = dataset.map(scale)\n",
+    "\n",
+    "  if is_training:\n",
+    "    dataset = dataset.shuffle(10000)\n",
+    "    dataset = dataset.repeat()\n",
+    "\n",
+    "  dataset = dataset.batch(batch_size)\n",
+    "\n",
+    "  return dataset"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "ecabdb7f",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "batch_size = 200\n",
+    "steps_per_epoch = 60000 // batch_size\n",
+    "validation_steps = 10000 // batch_size\n",
+    "\n",
+    "train_dataset = get_dataset(batch_size, is_training=True)\n",
+    "test_dataset = get_dataset(batch_size, is_training=False)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "3e0c82fb",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "model = tf.keras.models.Sequential([tf.keras.layers.Conv2D(256, 3, activation='relu', input_shape=(28, 28, 1)),\n",
+    "       tf.keras.layers.Conv2D(256, 3, activation='relu'),\n",
+    "       tf.keras.layers.Flatten(),\n",
+    "       tf.keras.layers.Dense(256, activation='relu'),\n",
+    "       tf.keras.layers.Dense(128, activation='relu'),\n",
+    "       tf.keras.layers.Dense(10)])\n",
+    "model.compile(\n",
+    "    optimizer=tf.keras.optimizers.Adam(0.001),\n",
+    "    loss=tf.keras.losses.SparseCategoricalCrossentropy(from_logits=True),\n",
+    "    metrics=[tf.keras.metrics.SparseCategoricalAccuracy()],\n",
+    ")\n",
+    "\n",
+    "model.summary()"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "6bd94d08",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "history = model.fit(\n",
+    "    train_dataset,\n",
+    "    epochs=1,\n",
+    "    steps_per_epoch=steps_per_epoch,\n",
+    "    validation_data=test_dataset,\n",
+    "    validation_steps=validation_steps,\n",
+    ")"
+   ]
+  }
+ ],
+ "metadata": {
+  "colab": {
+   "provenance": []
+  },
+  "kernelspec": {
+   "display_name": ".venv",
+   "language": "python",
+   "name": "python3"
+  },
+  "language_info": {
+   "name": "python",
+   "pygments_lexer": "ipython3",
+   "version": "3.12.8"
+  }
+ },
+ "nbformat": 4,
+ "nbformat_minor": 5
+}

@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 375" width="1000" height="375" font-family="Inter, system-ui, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif"><style>
+ .cl{font-size:16px;font-weight:700}
+ .pl{font-size:13px;font-weight:700;fill:#1F2A26}
+ .cp{font-size:13.5px;fill:#616D68}
+</style>
+<defs><clipPath id="ea"><ellipse cx="430" cy="195" rx="250" ry="95"/></clipPath></defs>
+<rect width="1000" height="375" fill="#FFFFFF"/>
+<rect x="60" y="60" width="880" height="240" rx="10" fill="#F7F7F5" stroke="#9AA19B" stroke-width="2.5"/>
+<rect x="60" y="60" width="220" height="240" fill="#EAF1FE"/>
+<rect x="280" y="60" width="220" height="240" fill="#E9F5EE"/>
+<rect x="500" y="60" width="220" height="240" fill="#FDF3DF"/>
+<rect x="720" y="60" width="220" height="240" fill="#F0EAFA"/>
+<g clip-path="url(#ea)">
+  <rect x="60" y="60" width="220" height="240" fill="#9CC0F7"/>
+  <rect x="280" y="60" width="220" height="240" fill="#8FD3AC"/>
+  <rect x="500" y="60" width="220" height="240" fill="#F3D286"/>
+</g>
+<line x1="280" y1="60" x2="280" y2="300" stroke="#B6BDB8" stroke-width="2"/>
+<line x1="500" y1="60" x2="500" y2="300" stroke="#B6BDB8" stroke-width="2"/>
+<line x1="720" y1="60" x2="720" y2="300" stroke="#B6BDB8" stroke-width="2"/>
+<ellipse cx="430" cy="195" rx="250" ry="95" fill="none" stroke="#1F4FA8" stroke-width="3.5"/>
+<text x="170" y="88" text-anchor="middle" class="cl" fill="#2F6BD8">C<tspan font-size="12" dy="4">1</tspan></text>
+<text x="390" y="88" text-anchor="middle" class="cl" fill="#22874C">C<tspan font-size="12" dy="4">2</tspan></text>
+<text x="610" y="88" text-anchor="middle" class="cl" fill="#A8760F">C<tspan font-size="12" dy="4">3</tspan></text>
+<text x="830" y="88" text-anchor="middle" class="cl" fill="#6B4CC4">C<tspan font-size="12" dy="4">4</tspan></text>
+<text x="925" y="288" text-anchor="end" font-size="19" fill="#616D68" font-style="italic">&#937;</text>
+<text x="430" y="132" text-anchor="middle" font-size="19" font-weight="700" fill="#1F4FA8">A</text>
+<text x="232" y="200" text-anchor="middle" class="pl">A&#8745;C<tspan font-size="10" dy="4">1</tspan></text>
+<text x="390" y="200" text-anchor="middle" class="pl">A&#8745;C<tspan font-size="10" dy="4">2</tspan></text>
+<text x="588" y="200" text-anchor="middle" class="pl">A&#8745;C<tspan font-size="10" dy="4">3</tspan></text>
+<text x="830" y="200" text-anchor="middle" font-size="12.5" fill="#8A918C">A&#8745;C<tspan font-size="10" dy="4">4</tspan><tspan font-size="12.5" dy="-4"> = &#8709;</tspan></text>
+<text x="500" y="345" text-anchor="middle" class="cp">la partizione taglia A in pezzi che non si sovrappongono e che, rimessi insieme, ricostruiscono A</text>
+</svg>

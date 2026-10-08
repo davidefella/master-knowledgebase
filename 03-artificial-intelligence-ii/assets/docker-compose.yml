@@ -1,0 +1,14 @@
+# Pin the image tag to match the TensorFlow version you teach; see:
+# https://hub.docker.com/r/tensorflow/tensorflow/tags
+services:
+  jupyter:
+    image: tensorflow/tensorflow:2.19.0-gpu-jupyter
+    runtime: nvidia
+    environment:
+      - NVIDIA_VISIBLE_DEVICES=all
+      - NVIDIA_DRIVER_CAPABILITIES=all
+    ports:
+      - "8888:8888"
+    volumes:
+      - ../:/workspace
+    working_dir: /workspace

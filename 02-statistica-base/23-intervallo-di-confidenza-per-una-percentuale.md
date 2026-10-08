@@ -51,7 +51,7 @@ p_{1,2} = \frac{-b \pm \sqrt{b^{2} - 4ac}}{2a}
 $$
 ---
 ## L'esempio dell'exit poll
-![](notion-file-block://b5338cce-469e-4400-9523-a3dce07d7041/7110f49c-6f54-4317-9531-228dda2c6a9b?space_id=98012abc-808d-816f-9733-00030a2b4817&name=26-exitpoll.svg)
+![](assets/26-exitpoll.svg)
 Con $`n = 100`$, $`k = 78`$ e $`\gamma = 95\%`$ (quindi $`z_{\alpha/2} = 1{,}96`$):
 $$
 \left(\frac{78}{100} - p\right)^{2} - \frac{(1{,}96)^{2}}{100}\,p(1-p) < 0

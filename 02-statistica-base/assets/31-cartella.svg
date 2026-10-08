@@ -1,0 +1,64 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 340" width="1000" height="340" font-family="Inter, system-ui, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif">
+<rect width="1000" height="340" fill="#FFFFFF"/>
+<text x="40" y="34" font-size="16" font-weight="700" fill="#232A28">La cartella che seguiremo per tutto il caso di studio</text>
+<text x="40" y="58" font-size="13.5" font-weight="700" fill="#6B7671">15 numeri su 90. Dopo 30 estrazioni ne sono usciti 5: esattamente il valore atteso.</text>
+<rect x="60" y="90" width="62" height="50" fill="#FFFFFF" fill-opacity="1" stroke="#C3C9C4" stroke-width="1.2"/>
+<text x="91.0" y="122.0" text-anchor="middle" font-size="20" font-weight="600" fill="#232A28">5</text>
+<rect x="122" y="90" width="62" height="50" fill="#22874C" fill-opacity="0.16" stroke="#C3C9C4" stroke-width="1.2"/>
+<text x="153.0" y="122.0" text-anchor="middle" font-size="20" font-weight="700" fill="#22874C">17</text>
+<circle cx="173" cy="101" r="4" fill="#22874C"/>
+<rect x="184" y="90" width="62" height="50" fill="#F4F5F4" stroke="#C3C9C4" stroke-width="1.2"/>
+<rect x="246" y="90" width="62" height="50" fill="#22874C" fill-opacity="0.16" stroke="#C3C9C4" stroke-width="1.2"/>
+<text x="277.0" y="122.0" text-anchor="middle" font-size="20" font-weight="700" fill="#22874C">34</text>
+<circle cx="297" cy="101" r="4" fill="#22874C"/>
+<rect x="308" y="90" width="62" height="50" fill="#F4F5F4" stroke="#C3C9C4" stroke-width="1.2"/>
+<rect x="370" y="90" width="62" height="50" fill="#FFFFFF" fill-opacity="1" stroke="#C3C9C4" stroke-width="1.2"/>
+<text x="401.0" y="122.0" text-anchor="middle" font-size="20" font-weight="600" fill="#232A28">51</text>
+<rect x="432" y="90" width="62" height="50" fill="#F4F5F4" stroke="#C3C9C4" stroke-width="1.2"/>
+<rect x="494" y="90" width="62" height="50" fill="#FFFFFF" fill-opacity="1" stroke="#C3C9C4" stroke-width="1.2"/>
+<text x="525.0" y="122.0" text-anchor="middle" font-size="20" font-weight="600" fill="#232A28">78</text>
+<rect x="556" y="90" width="62" height="50" fill="#F4F5F4" stroke="#C3C9C4" stroke-width="1.2"/>
+<rect x="60" y="140" width="62" height="50" fill="#F4F5F4" stroke="#C3C9C4" stroke-width="1.2"/>
+<rect x="122" y="140" width="62" height="50" fill="#FFFFFF" fill-opacity="1" stroke="#C3C9C4" stroke-width="1.2"/>
+<text x="153.0" y="172.0" text-anchor="middle" font-size="20" font-weight="600" fill="#232A28">12</text>
+<rect x="184" y="140" width="62" height="50" fill="#FFFFFF" fill-opacity="1" stroke="#C3C9C4" stroke-width="1.2"/>
+<text x="215.0" y="172.0" text-anchor="middle" font-size="20" font-weight="600" fill="#232A28">23</text>
+<rect x="246" y="140" width="62" height="50" fill="#F4F5F4" stroke="#C3C9C4" stroke-width="1.2"/>
+<rect x="308" y="140" width="62" height="50" fill="#FFFFFF" fill-opacity="1" stroke="#C3C9C4" stroke-width="1.2"/>
+<text x="339.0" y="172.0" text-anchor="middle" font-size="20" font-weight="600" fill="#232A28">46</text>
+<rect x="370" y="140" width="62" height="50" fill="#F4F5F4" stroke="#C3C9C4" stroke-width="1.2"/>
+<rect x="432" y="140" width="62" height="50" fill="#22874C" fill-opacity="0.16" stroke="#C3C9C4" stroke-width="1.2"/>
+<text x="463.0" y="172.0" text-anchor="middle" font-size="20" font-weight="700" fill="#22874C">62</text>
+<circle cx="483" cy="151" r="4" fill="#22874C"/>
+<rect x="494" y="140" width="62" height="50" fill="#F4F5F4" stroke="#C3C9C4" stroke-width="1.2"/>
+<rect x="556" y="140" width="62" height="50" fill="#FFFFFF" fill-opacity="1" stroke="#C3C9C4" stroke-width="1.2"/>
+<text x="587.0" y="172.0" text-anchor="middle" font-size="20" font-weight="600" fill="#232A28">85</text>
+<rect x="60" y="190" width="62" height="50" fill="#22874C" fill-opacity="0.16" stroke="#C3C9C4" stroke-width="1.2"/>
+<text x="91.0" y="222.0" text-anchor="middle" font-size="20" font-weight="700" fill="#22874C">8</text>
+<circle cx="111" cy="201" r="4" fill="#22874C"/>
+<rect x="122" y="190" width="62" height="50" fill="#F4F5F4" stroke="#C3C9C4" stroke-width="1.2"/>
+<rect x="184" y="190" width="62" height="50" fill="#FFFFFF" fill-opacity="1" stroke="#C3C9C4" stroke-width="1.2"/>
+<text x="215.0" y="222.0" text-anchor="middle" font-size="20" font-weight="600" fill="#232A28">29</text>
+<rect x="246" y="190" width="62" height="50" fill="#FFFFFF" fill-opacity="1" stroke="#C3C9C4" stroke-width="1.2"/>
+<text x="277.0" y="222.0" text-anchor="middle" font-size="20" font-weight="600" fill="#232A28">41</text>
+<rect x="308" y="190" width="62" height="50" fill="#F4F5F4" stroke="#C3C9C4" stroke-width="1.2"/>
+<rect x="370" y="190" width="62" height="50" fill="#22874C" fill-opacity="0.16" stroke="#C3C9C4" stroke-width="1.2"/>
+<text x="401.0" y="222.0" text-anchor="middle" font-size="20" font-weight="700" fill="#22874C">55</text>
+<circle cx="421" cy="201" r="4" fill="#22874C"/>
+<rect x="432" y="190" width="62" height="50" fill="#F4F5F4" stroke="#C3C9C4" stroke-width="1.2"/>
+<rect x="494" y="190" width="62" height="50" fill="#FFFFFF" fill-opacity="1" stroke="#C3C9C4" stroke-width="1.2"/>
+<text x="525.0" y="222.0" text-anchor="middle" font-size="20" font-weight="600" fill="#232A28">70</text>
+<rect x="556" y="190" width="62" height="50" fill="#F4F5F4" stroke="#C3C9C4" stroke-width="1.2"/>
+<rect x="60" y="90" width="558" height="150" fill="none" stroke="#232A28" stroke-width="2.2"/>
+<circle cx="66" cy="266" r="4.5" fill="#22874C"/>
+<text x="78" y="271" font-size="13" fill="#232A28">gi&#224; usciti</text>
+<text x="652" y="98" font-size="19" font-weight="700" fill="#232A28">15 / 90</text>
+<text x="652" y="116" font-size="12" fill="#6B7671">i miei numeri sul totale</text>
+<text x="652" y="142" font-size="19" font-weight="700" fill="#2F6BD8">1/6</text>
+<text x="652" y="160" font-size="12" fill="#6B7671">che il prossimo estratto sia mio</text>
+<text x="652" y="186" font-size="19" font-weight="700" fill="#C2571A">5</text>
+<text x="652" y="204" font-size="12" fill="#6B7671">E[X] dopo 30 estrazioni</text>
+<text x="652" y="230" font-size="19" font-weight="700" fill="#C2571A">1,68</text>
+<text x="652" y="248" font-size="12" fill="#6B7671">&#963; attorno a quel 5</text>
+<text x="40" y="324" font-size="13.5" fill="#6B7671">Tutti i numeri di questo caso di studio sono calcolati su questa cartella e su un sacchetto da 90.</text>
+</svg>

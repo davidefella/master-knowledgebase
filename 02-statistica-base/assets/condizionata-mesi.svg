@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 270" width="1000" height="270" font-family="Inter, system-ui, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif">
+<rect width="1000" height="270" fill="#FFFFFF"/>
+<rect x="20" y="55" width="450" height="160" rx="14" fill="#F7F7F5" stroke="#D5D9D6" stroke-width="2"/>
+<rect x="520" y="55" width="460" height="160" rx="14" fill="#F7F7F5" stroke="#D5D9D6" stroke-width="2"/>
+<text x="245" y="40" text-anchor="middle" font-size="15" font-weight="700" fill="#3A423E">senza informazioni</text>
+<text x="750" y="40" text-anchor="middle" font-size="15" font-weight="700" fill="#3A423E">dato che il mese &#232; lungo (L)</text>
+<rect x="40" y="78" width="95" height="34" rx="17" fill="#CFE0FB" stroke="#2F6BD8" stroke-width="2"/><text x="87.5" y="95.0" dy=".35em" text-anchor="middle" font-size="14" font-weight="700" fill="#1B4FA8">Jan</text>
+<rect x="150" y="78" width="95" height="34" rx="17" fill="#EDEEEC" stroke="#C4C9C5" stroke-width="2"/><text x="197.5" y="95.0" dy=".35em" text-anchor="middle" font-size="14" font-weight="700" fill="#8A918C">Feb</text>
+<rect x="260" y="78" width="95" height="34" rx="17" fill="#CFE0FB" stroke="#2F6BD8" stroke-width="2"/><text x="307.5" y="95.0" dy=".35em" text-anchor="middle" font-size="14" font-weight="700" fill="#1B4FA8">Mar</text>
+<rect x="370" y="78" width="95" height="34" rx="17" fill="#EDEEEC" stroke="#C4C9C5" stroke-width="2"/><text x="417.5" y="95.0" dy=".35em" text-anchor="middle" font-size="14" font-weight="700" fill="#8A918C">Apr</text>
+<rect x="40" y="120" width="95" height="34" rx="17" fill="#CFE0FB" stroke="#2F6BD8" stroke-width="2"/><text x="87.5" y="137.0" dy=".35em" text-anchor="middle" font-size="14" font-weight="700" fill="#1B4FA8">May</text>
+<rect x="150" y="120" width="95" height="34" rx="17" fill="#EDEEEC" stroke="#C4C9C5" stroke-width="2"/><text x="197.5" y="137.0" dy=".35em" text-anchor="middle" font-size="14" font-weight="700" fill="#8A918C">Jun</text>
+<rect x="260" y="120" width="95" height="34" rx="17" fill="#CFE0FB" stroke="#2F6BD8" stroke-width="2"/><text x="307.5" y="137.0" dy=".35em" text-anchor="middle" font-size="14" font-weight="700" fill="#1B4FA8">Jul</text>
+<rect x="370" y="120" width="95" height="34" rx="17" fill="#CFE0FB" stroke="#2F6BD8" stroke-width="2"/><text x="417.5" y="137.0" dy=".35em" text-anchor="middle" font-size="14" font-weight="700" fill="#1B4FA8">Aug</text>
+<rect x="40" y="162" width="95" height="34" rx="17" fill="#EDEEEC" stroke="#C4C9C5" stroke-width="2"/><text x="87.5" y="179.0" dy=".35em" text-anchor="middle" font-size="14" font-weight="700" fill="#8A918C">Sep</text>
+<rect x="150" y="162" width="95" height="34" rx="17" fill="#CFE0FB" stroke="#2F6BD8" stroke-width="2"/><text x="197.5" y="179.0" dy=".35em" text-anchor="middle" font-size="14" font-weight="700" fill="#1B4FA8">Oct</text>
+<rect x="260" y="162" width="95" height="34" rx="17" fill="#EDEEEC" stroke="#C4C9C5" stroke-width="2"/><text x="307.5" y="179.0" dy=".35em" text-anchor="middle" font-size="14" font-weight="700" fill="#8A918C">Nov</text>
+<rect x="370" y="162" width="95" height="34" rx="17" fill="#CFE0FB" stroke="#2F6BD8" stroke-width="2"/><text x="417.5" y="179.0" dy=".35em" text-anchor="middle" font-size="14" font-weight="700" fill="#1B4FA8">Dec</text>
+<text x="495" y="142" text-anchor="middle" font-size="26" fill="#8A918C">&#8594;</text>
+<rect x="545" y="95" width="95" height="34" rx="17" fill="#CFEBD9" stroke="#22874C" stroke-width="2"/><text x="592.5" y="112.0" dy=".35em" text-anchor="middle" font-size="14" font-weight="700" fill="#17683A">Jan</text>
+<rect x="655" y="95" width="95" height="34" rx="17" fill="#CFEBD9" stroke="#22874C" stroke-width="2"/><text x="702.5" y="112.0" dy=".35em" text-anchor="middle" font-size="14" font-weight="700" fill="#17683A">Mar</text>
+<rect x="765" y="95" width="95" height="34" rx="17" fill="#EDEEEC" stroke="#C4C9C5" stroke-width="2"/><text x="812.5" y="112.0" dy=".35em" text-anchor="middle" font-size="14" font-weight="700" fill="#8A918C">May</text>
+<rect x="875" y="95" width="95" height="34" rx="17" fill="#EDEEEC" stroke="#C4C9C5" stroke-width="2"/><text x="922.5" y="112.0" dy=".35em" text-anchor="middle" font-size="14" font-weight="700" fill="#8A918C">Jul</text>
+<rect x="545" y="145" width="95" height="34" rx="17" fill="#EDEEEC" stroke="#C4C9C5" stroke-width="2"/><text x="592.5" y="162.0" dy=".35em" text-anchor="middle" font-size="14" font-weight="700" fill="#8A918C">Aug</text>
+<rect x="655" y="145" width="95" height="34" rx="17" fill="#CFEBD9" stroke="#22874C" stroke-width="2"/><text x="702.5" y="162.0" dy=".35em" text-anchor="middle" font-size="14" font-weight="700" fill="#17683A">Oct</text>
+<rect x="765" y="145" width="95" height="34" rx="17" fill="#CFEBD9" stroke="#22874C" stroke-width="2"/><text x="812.5" y="162.0" dy=".35em" text-anchor="middle" font-size="14" font-weight="700" fill="#17683A">Dec</text>
+<text x="245" y="245" text-anchor="middle" font-size="13" fill="#616D68">12 mesi possibili &#8212; in blu i 7 lunghi</text>
+<text x="750" y="245" text-anchor="middle" font-size="13" fill="#616D68">restano 7 candidati &#8212; in verde i 4 con la « r »</text>
+</svg>

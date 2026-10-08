@@ -292,5 +292,5 @@ Se non si dispone di una macchina potente, restano le piattaforme online.
 ---
 ## File allegati
 Il `docker-compose.yml` ufficiale, che a differenza di quello mostrato a lezione contiene `volumes` e `working_dir` — cioè la soluzione al problema della persistenza dei file che il docente pone a voce a `TF-01 @ 00:51:30` senza risolverlo a schermo.
-<file src="notion-file-block://143ac29b-cb47-431b-8460-3e6e8b77a9a8/22331ce3-f667-42cb-9bd7-765db3c031f1?space_id=98012abc-808d-816f-9733-00030a2b4817&name=docker-compose.yml"></file>
-<file src="notion-file-block://8d970b53-8480-4dac-a9fd-cca4c58be9bf/a9a5969a-481e-4786-9d8e-d73796953ca2?space_id=98012abc-808d-816f-9733-00030a2b4817&name=docker-README.md"></file>
+[📎 assets/docker-compose.yml](assets/docker-compose.yml)
+[📎 assets/docker-README.md](assets/docker-README.md)

@@ -16,4 +16,4 @@ Materiale rielaborato e integrato del Master in Data Analytics (Roma Tre), migra
 
 - Ogni file riporta in testa l'URL della pagina Notion d'origine e la data di ultima modifica.
 - Blocchi Notion senza equivalente Markdown (callout, toggle, tabelle) sono rimasti in HTML.
-- **Allegati da recuperare**: immagini e file caricati su Notion compaiono ancora come riferimenti `notion-file-block://` (SVG in Statistica Base, immagini in Python 02 - Statistica descrittiva, file in AI II 02–04). Vanno sostituiti con i file in `assets/` prima di cancellare il workspace Notion.
+- Immagini e file allegati su Notion sono nella cartella `assets/` di ciascun corso (Python, Statistica Base, AI II), recuperati dall'export nativo di Notion.

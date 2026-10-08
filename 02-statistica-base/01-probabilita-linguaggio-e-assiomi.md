@@ -77,7 +77,7 @@ Sul dado: $`P(\text{esce } 4) = 1/6 \approx 0.17`$ — un esito favorevole su se
 Nella slide il docente disegna un insieme più grande, $`\{0,1,2,3,4,5,6,7,8,9,\dots\}`$, e lo chiama *il mondo*. Non è lo spazio campionario: è l'insieme in cui **vivono** i valori, cioè la loro natura. In questo caso, i numeri naturali.
 Il dado non può dare 0, quindi quell'insieme **non** è lo spazio campionario del dado: è l'ambiente più ampio da cui il dado pesca solo $`\{1,\dots,6\}`$.
 > **In termini informatici:** è il **tipo**. Dichiarare `int` dice quali valori sono ammissibili in generale; poi il fenomeno specifico ne usa un sottoinsieme.
-![](notion-file-block://2261469a-31dd-4a8f-8761-e7802cabd20d/a5aaf50a-896a-4da4-b350-cd86abbcb6e0?space_id=98012abc-808d-816f-9733-00030a2b4817&name=mondo-omega-evento.svg)
+![](assets/mondo-omega-evento.svg)
 Lo 0 c'è semplicemente perché fa parte dei numeri naturali, l'insieme disegnato dal docente. Il dado non lo produrrà mai — non ha una faccia con lo 0 — ed è proprio questo che mostra la differenza fra i due insiemi.
 <callout icon="⚠️" color="yellow_bg">
 	**Allora **$`\Omega`$** è il mondo, o è **$`\{1,\dots,6\}`$**?**
@@ -98,7 +98,7 @@ Si legge così: **lo spazio campionario è formato dall'evento che stai analizza
 	Un'unica precisazione: $`\Omega`$ **non** è "tutti i valori esistenti", ma solo i sei che il dado può davvero produrre. L'insieme di tutti i numeri è il *mondo* della sezione precedente, che è un'altra cosa.
 </callout>
 **Sul dado:** $`E`$ = "esce pari" $`= \{2,4,6\}`$, quindi $`\bar{E}`$ = "esce dispari" $`= \{1,3,5\}`$. Uniti danno tutte e sei le facce.
-![](notion-file-block://08b56542-c9a9-48c7-843f-fe12c7e450b1/c0f32f24-ead1-438f-828d-00dd2d8a0622?space_id=98012abc-808d-816f-9733-00030a2b4817&name=venn-01-complementare.svg)
+![](assets/venn-01-complementare.svg)
 ### 2. Intersezione e "né l'uno né l'altro"
 $$
 C = A \cap B \qquad D = \bar{A} \cap \bar{B}
@@ -108,7 +108,7 @@ $$
 **Sul dado**, con $`A`$ = "pari" $`= \{2,4,6\}`$ e $`B`$ = "maggiore di 3" $`= \{4,5,6\}`$:
 - $`A \cap B = \{4,6\}`$ → pari **e** maggiore di 3
 - $`\bar{A} \cap \bar{B} = \{1,3\}`$ → dispari **e** minore o uguale a 3
-![](notion-file-block://8db92442-da2c-4874-a3d2-b2a8416d5ea9/19649a84-f943-4e01-970f-26c54b80a29a?space_id=98012abc-808d-816f-9733-00030a2b4817&name=venn-02-intersezione.svg)
+![](assets/venn-02-intersezione.svg)
 ### 3. La partizione
 Partizionare vuol dire **dividere** $`\Omega`$ **in gruppi**, rispettando due regole contemporaneamente: i gruppi devono **coprire tutto** e **non sovrapporsi**.
 Sono le due regole formalizzate qui sotto come *esaustivi* ed *esclusivi*.
@@ -137,11 +137,11 @@ $$
 H_1 = \{1,2\} \qquad H_2 = \{3,4\} \qquad H_3 = \{5,6\}
 $$
 Verifica delle due regole: tutte e sei le facce compaiono da qualche parte (esaustivi), e nessuna faccia compare due volte (esclusivi).
-![](notion-file-block://93ac1333-05d4-4482-946e-7c1e49e2f3b5/e930af26-0872-43fc-87d8-07c1da047df3?space_id=98012abc-808d-816f-9733-00030a2b4817&name=venn-03-partizione.svg)
+![](assets/venn-03-partizione.svg)
 **Attenzione: non tutte le divisioni sono partizioni.** Basta che salti una delle due regole e non lo è più.
 - $`\{1,2,3,4\}`$ e $`\{4,5,6\}`$ → **no**, il 4 finirebbe in due cassetti
 - $`\{1,2\}`$ e $`\{5,6\}`$ → **no**, il 3 e il 4 resterebbero fuori
-![](notion-file-block://1599511d-80e0-44a2-9c0b-84db26b3b0d2/ade7ae5c-a603-48e6-a00c-b928db7536a8?space_id=98012abc-808d-816f-9733-00030a2b4817&name=partizione-controesempi.svg)
+![](assets/partizione-controesempi.svg)
 **A cosa serve tutto questo.** Se i cassetti sono una vera partizione, le loro probabilità sommano esattamente a 1 — sul dado $`2/6 + 2/6 + 2/6 = 1`$. Questo permette di calcolare la probabilità di un evento **un cassetto alla volta**, sommando i pezzi, invece di affrontarla tutta insieme: è la mossa che rende gestibili i problemi complicati.
 > La lettera $`H`$ sta per *ipotesi*: i cassetti rappresentano scenari alternativi, di cui **uno solo è quello vero, ma di sicuro uno lo è**. La partizione torna in azione nel modulo [02 - Probabilità condizionata](02-probabilita-condizionata.md), con la legge della probabilità totale.
 Il caso 1 di questa pagina — evento e complementare — è la partizione più semplice possibile: due soli cassetti, $`E`$ e $`\bar{E}`$.

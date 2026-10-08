@@ -16,7 +16,7 @@ $$
 P\big(T \le \text{valore misurato} \;\mid\; H_0\big)
 $$
 Questa probabilità **è** il p-value.
-![](notion-file-block://24b954eb-812b-4d6a-8c22-22be23c5ff6c/161ded3a-85e7-4da7-83ce-3b90983e21b8?space_id=98012abc-808d-816f-9733-00030a2b4817&name=28-pvalue.svg)
+![](assets/28-pvalue.svg)
 ---
 ## La regola di decisione
 <table fit-page-width="true" header-row="true">

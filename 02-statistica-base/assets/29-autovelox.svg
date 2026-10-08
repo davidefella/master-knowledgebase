@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 400" width="1000" height="400" font-family="Inter, system-ui, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif">
+<rect width="1000" height="400" fill="#FFFFFF"/>
+<text x="40" y="34" font-size="16" font-weight="700" fill="#232A28">Autovelox: dove mettere la soglia della multa</text>
+<text x="40" y="58" font-size="13.5" font-weight="700" fill="#6B7671">Se viaggio esattamente a 130, la media di 3 misure si distribuisce cos&#236;. Solo il 5% supera 131,9.</text>
+<path d="M634.2,300 L634,248 L639,253 L644,257 L650,261 L655,265 L660,268 L665,272 L670,275 L675,277 L680,280 L685,282 L690,284 L696,286 L701,288 L706,289 L711,291 L716,292 L721,293 L726,294 L731,295 L736,295 L742,296 L747,297 L752,297 L757,298 L762,298 L767,298 L772,298 L777,299 L783,299 L788,299 L793,299 L798,299 L803,300 L808,300 L813,300 L818,300 L824,300 L829,300 L834,300 L839,300 L844,300 L849,300 L854,300 L859,300 L864,300 L870,300 L875,300 L880,300 L885,300 L890,300 L890.0,300 Z" fill="#B4341F" fill-opacity="0.45" stroke="none"/>
+<path d="M110.0,300 L110,300 L120,300 L131,300 L142,300 L152,300 L162,300 L173,299 L183,299 L194,298 L204,298 L215,297 L225,296 L236,294 L246,292 L257,289 L267,286 L278,282 L288,277 L299,271 L309,264 L320,256 L330,247 L341,237 L351,225 L362,213 L372,200 L383,186 L393,173 L404,159 L414,146 L424,134 L435,124 L446,114 L456,107 L466,103 L477,100 L487,100 L498,103 L508,108 L519,116 L529,125 L540,136 L550,148 L561,161 L571,175 L582,188 L592,202 L603,215 L613,227 L624,238 L634,248 L634.2,300 Z" fill="#22874C" fill-opacity="0.15" stroke="none"/>
+<path d="M110,300 L113,300 L116,300 L120,300 L123,300 L126,300 L130,300 L133,300 L136,300 L139,300 L142,300 L146,300 L149,300 L152,300 L156,300 L159,300 L162,300 L165,299 L168,299 L172,299 L175,299 L178,299 L182,299 L185,299 L188,299 L191,298 L194,298 L198,298 L201,298 L204,298 L208,297 L211,297 L214,297 L217,296 L220,296 L224,296 L227,295 L230,295 L234,294 L237,294 L240,293 L243,292 L246,292 L250,291 L253,290 L256,289 L260,288 L263,288 L266,286 L269,285 L272,284 L276,283 L279,281 L282,280 L286,278 L289,277 L292,275 L295,273 L298,271 L302,269 L305,267 L308,265 L312,262 L315,260 L318,258 L321,255 L324,252 L328,249 L331,246 L334,243 L338,240 L341,236 L344,233 L347,230 L350,226 L354,222 L357,218 L360,215 L364,211 L367,207 L370,203 L373,198 L376,194 L380,190 L383,186 L386,182 L390,178 L393,173 L396,169 L399,165 L402,161 L406,156 L409,152 L412,148 L416,145 L419,141 L422,137 L425,133 L428,130 L432,127 L435,124 L438,120 L442,118 L445,115 L448,112 L451,110 L454,108 L458,106 L461,105 L464,103 L468,102 L471,101 L474,101 L477,100 L480,100 L484,100 L487,100 L490,101 L494,102 L497,103 L500,104 L503,105 L506,107 L510,109 L513,111 L516,114 L520,116 L523,119 L526,122 L529,125 L532,128 L536,132 L539,135 L542,139 L546,142 L549,146 L552,150 L555,154 L558,158 L562,162 L565,167 L568,171 L572,175 L575,179 L578,184 L581,188 L584,192 L588,196 L591,200 L594,204 L598,208 L601,212 L604,216 L607,220 L610,224 L614,228 L617,231 L620,235 L624,238 L627,241 L630,244 L633,248 L636,250 L640,253 L643,256 L646,259 L650,261 L653,264 L656,266 L659,268 L662,270 L666,272 L669,274 L672,276 L676,278 L679,279 L682,281 L685,282 L688,283 L692,285 L695,286 L698,287 L702,288 L705,289 L708,290 L711,291 L714,291 L718,292 L721,293 L724,294 L728,294 L731,295 L734,295 L737,296 L740,296 L744,296 L747,297 L750,297 L754,297 L757,298 L760,298 L763,298 L766,298 L770,298 L773,299 L776,299 L780,299 L783,299 L786,299 L789,299 L792,299 L796,299 L799,299 L802,300 L806,300 L809,300 L812,300 L815,300 L818,300 L822,300 L825,300 L828,300 L832,300 L835,300 L838,300 L841,300 L844,300 L848,300 L851,300 L854,300 L858,300 L861,300 L864,300 L867,300 L870,300 L874,300 L877,300 L880,300 L884,300 L887,300 L890,300" fill="none" stroke="#232A28" stroke-width="2.6"/>
+<line x1="110" y1="300" x2="890" y2="300" stroke="#C3C9C4" stroke-width="1.5"/>
+<line x1="240.2" y1="300" x2="240.2" y2="305" stroke="#C3C9C4" stroke-width="1.4"/>
+<text x="240.2" y="322" text-anchor="middle" font-size="12" fill="#6B7671">127</text>
+<line x1="320.6" y1="300" x2="320.6" y2="305" stroke="#C3C9C4" stroke-width="1.4"/>
+<text x="320.6" y="322" text-anchor="middle" font-size="12" fill="#6B7671">128</text>
+<line x1="401.0" y1="300" x2="401.0" y2="305" stroke="#C3C9C4" stroke-width="1.4"/>
+<text x="401.0" y="322" text-anchor="middle" font-size="12" fill="#6B7671">129</text>
+<line x1="481.4" y1="300" x2="481.4" y2="305" stroke="#C3C9C4" stroke-width="1.4"/>
+<text x="481.4" y="322" text-anchor="middle" font-size="12" fill="#6B7671">130</text>
+<line x1="561.8" y1="300" x2="561.8" y2="305" stroke="#C3C9C4" stroke-width="1.4"/>
+<text x="561.8" y="322" text-anchor="middle" font-size="12" fill="#6B7671">131</text>
+<line x1="642.3" y1="300" x2="642.3" y2="305" stroke="#C3C9C4" stroke-width="1.4"/>
+<text x="642.3" y="322" text-anchor="middle" font-size="12" fill="#6B7671">132</text>
+<line x1="722.7" y1="300" x2="722.7" y2="305" stroke="#C3C9C4" stroke-width="1.4"/>
+<text x="722.7" y="322" text-anchor="middle" font-size="12" fill="#6B7671">133</text>
+<text x="890" y="322" text-anchor="end" font-size="12.5" fill="#6B7671">km/h misurati</text>
+<line x1="481.4" y1="300" x2="481.4" y2="100.0" stroke="#6B7671" stroke-width="1.6" stroke-dasharray="4 3"/>
+<text x="481.4" y="88" text-anchor="middle" font-size="13.5" font-weight="700" fill="#232A28">limite 130</text>
+<line x1="634.2" y1="300" x2="634.2" y2="130" stroke="#B4341F" stroke-width="2.2"/>
+<text x="642.2" y="134" font-size="14" font-weight="700" fill="#B4341F">valore critico 131,9</text>
+<text x="642.2" y="154" font-size="12.5" fill="#6B7671">oltre qui scatta il rifiuto di H&#8320;</text>
+<text x="267.9" y="150" text-anchor="middle" font-size="14" font-weight="700" fill="#22874C">95%</text>
+<text x="267.9" y="170" text-anchor="middle" font-size="12.5" fill="#6B7671">non ti multo</text>
+<text x="810.6" y="230" text-anchor="middle" font-size="14" font-weight="700" fill="#B4341F">5%</text>
+<line x1="810.6" y1="238" x2="699.2" y2="286" stroke="#B4341F" stroke-width="1.4"/>
+<text x="40" y="362" font-size="13.5" fill="#6B7671">Lo strumento sbaglia: &#963; = 2 km/h su ogni misura, quindi &#963;/&#8730;3 &#8776; 1,15 sulla media di tre.</text>
+<text x="40" y="384" font-size="13.5" fill="#6B7671">La soglia si alza di 1,9 km/h per essere sicuri al 95% di non multare chi era davvero nei limiti.</text>
+</svg>

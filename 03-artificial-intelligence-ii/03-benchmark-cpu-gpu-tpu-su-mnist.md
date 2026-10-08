@@ -281,5 +281,5 @@ Un'ultima avvertenza `TF-01 @ 01:25:30`: quando si finisce di lavorare su Colab 
 ---
 ## File allegati
 I due notebook ufficiali del docente. Caricati con estensione `.json` perché Notion non accetta `.ipynb`: dopo il download rinominali in `.ipynb` per aprirli in Jupyter.
-<file src="notion-file-block://f288c125-f43a-45a7-ba32-0356fc08937c/0407aac1-e262-4c31-91c6-1a8c4dab4c22?space_id=98012abc-808d-816f-9733-00030a2b4817&name=colab_mnist_cpu_gpu.json"></file>
-<file src="notion-file-block://c6a7490d-e987-4bd7-8e56-084634248c92/23f4dbff-be0f-48df-8f59-591adcf5d792?space_id=98012abc-808d-816f-9733-00030a2b4817&name=colab_mnist_tpu.json"></file>
+[📎 assets/colab_mnist_cpu_gpu.json](assets/colab_mnist_cpu_gpu.json)
+[📎 assets/colab_mnist_tpu.json](assets/colab_mnist_tpu.json)

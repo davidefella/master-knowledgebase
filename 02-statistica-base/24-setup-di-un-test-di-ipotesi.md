@@ -66,7 +66,7 @@ I cinque numeri letti sono:
 $$
 \{70,\; 45,\; 150,\; 10,\; 35\} \qquad\Longrightarrow\qquad T = 150
 $$
-![](notion-file-block://6ec3d47d-69d7-486a-aee5-2f478e888738/e5dd6a40-c520-4789-9224-7bad36195d1c?space_id=98012abc-808d-816f-9733-00030a2b4817&name=27-tank.svg)
+![](assets/27-tank.svg)
 ---
 ## La domanda del test
 Se davvero $`N = 500`$, quanto sarebbe stato probabile osservare un massimo così basso?

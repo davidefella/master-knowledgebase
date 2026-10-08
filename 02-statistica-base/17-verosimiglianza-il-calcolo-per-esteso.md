@@ -11,7 +11,7 @@ Qui il principio del modulo 16 diventa un conto vero: dalla tabella osservata a 
 </callout>
 ---
 ## Il quadro: mondo, campione, osservazione
-![](notion-file-block://4e3c336f-37e1-467a-a3ab-efa66b26cec5/71c1bc4c-32a4-46ed-8788-b085c42aa82d?space_id=98012abc-808d-816f-9733-00030a2b4817&name=20-mondo-campione.svg)
+![](assets/20-mondo-campione.svg)
 Il **mondo** $`\Omega`$ contiene tutte le donne possibili. Noi ne osserviamo solo un gruppo, che il docente chiama **E** — il campione. Da E ricaviamo una tabella, e quella tabella è "descritta dal parametro $`p`$".
 L'obiettivo dichiarato: **determinare **$`p`$** in modo esatto, o con errore trascurabile**.
 ---

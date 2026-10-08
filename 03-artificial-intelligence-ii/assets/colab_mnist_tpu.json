@@ -1,0 +1,215 @@
+{
+ "cells": [
+  {
+   "cell_type": "markdown",
+   "id": "d93636da",
+   "metadata": {},
+   "source": [
+    "# MNIST on Google Colab (TPU)\n",
+    "\n",
+    "**Runtime → Change runtime type → TPU**, then run **top to bottom**.\n",
+    "\n",
+    "**Important (free Colab TPU):** the TPU runtime does **not** ship with TensorFlow. You must run the **first code cell** first: install `tensorflow` and `tensorflow-tpu` from Google’s **libtpu** index — same as the reference\n"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "e211a362",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "!pip install tensorflow==2.18.0 -q\n",
+    "!pip install tensorflow-tpu==2.18.0 --find-links=https://storage.googleapis.com/libtpu-tf-releases/index.html -q\n",
+    "!pip install ml_dtypes==0.5.0"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "a4f1ba9b",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "import tensorflow as tf\n",
+    "import tensorflow_datasets as tfds\n",
+    "import os\n",
+    "import numpy as np\n",
+    "import pandas as pd"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "47541146",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "try:\n",
+    "  tpu = tf.distribute.cluster_resolver.TPUClusterResolver(tpu='local')\n",
+    "  print(f'Running on a TPU w/{tpu.num_accelerators()[\"TPU\"]} cores')\n",
+    "except ValueError:\n",
+    "  raise BaseException('ERROR: Not connected to a TPU runtime')\n",
+    "\n",
+    "tf.config.experimental_connect_to_cluster(tpu)\n",
+    "tf.tpu.experimental.initialize_tpu_system(tpu)\n",
+    "tpu_strategy = tf.distribute.TPUStrategy(tpu)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "a45521b4",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "def create_model():\n",
+    "  return tf.keras.Sequential(\n",
+    "      [tf.keras.layers.Conv2D(256, 3, activation='relu', input_shape=(28, 28, 1)),\n",
+    "       tf.keras.layers.Conv2D(256, 3, activation='relu'),\n",
+    "       tf.keras.layers.Flatten(),\n",
+    "       tf.keras.layers.Dense(256, activation='relu'),\n",
+    "       tf.keras.layers.Dense(128, activation='relu'),\n",
+    "       tf.keras.layers.Dense(10)])"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "6462b59f",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "def get_dataset(batch_size, is_training=True):\n",
+    "  if is_training:\n",
+    "    dataset = tfds.load(name='mnist', split='train', as_supervised=True, try_gcs=True)\n",
+    "  else:\n",
+    "    dataset = tfds.load(name='mnist', split='test',as_supervised=True, try_gcs=True)\n",
+    "                        \n",
+    "\n",
+    "  # Normalize the input data.\n",
+    "  def scale(image, label):\n",
+    "    image = tf.cast(image, tf.float32)\n",
+    "    image /= 255.0\n",
+    "    return image, label\n",
+    "\n",
+    "  dataset = dataset.map(scale)\n",
+    "\n",
+    "  if is_training:\n",
+    "    dataset = dataset.shuffle(10000)\n",
+    "    dataset = dataset.repeat()\n",
+    "\n",
+    "  dataset = dataset.batch(batch_size)\n",
+    "\n",
+    "  return dataset"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "d2d51a71",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "with tpu_strategy.scope():\n",
+    "  model = create_model()\n",
+    "  model.compile(optimizer='adam',\n",
+    "                loss=tf.keras.losses.SparseCategoricalCrossentropy(from_logits=True),\n",
+    "                metrics=['sparse_categorical_accuracy'])\n",
+    "model.summary()"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "a8f11eec",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "batch_size = 200\n",
+    "steps_per_epoch = 60000 // batch_size\n",
+    "validation_steps = 10000 // batch_size\n",
+    "\n",
+    "train_dataset = get_dataset(batch_size, is_training=True)\n",
+    "test_dataset = get_dataset(batch_size, is_training=False)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "362662f7",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "predictions = model.predict(test_dataset)\n",
+    "pred_labels = np.argmax(predictions, axis=1)\n",
+    "\n",
+    "\n",
+    "true_labels = np.concatenate([\n",
+    "    label_batch.numpy() for _, label_batch in test_dataset\n",
+    "], axis=0)\n",
+    "\n",
+    "df = pd.DataFrame({\n",
+    "    'label_true': true_labels,\n",
+    "    'label_pred': pred_labels\n",
+    "})\n",
+    "\n",
+    "df.head(10)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "800e0da1",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "history = model.fit(train_dataset,\n",
+    "          epochs=5,\n",
+    "          steps_per_epoch=steps_per_epoch,\n",
+    "          validation_data=test_dataset,\n",
+    "          validation_steps=validation_steps)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "4ec85ffa",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "predictions = model.predict(test_dataset)\n",
+    "pred_labels = np.argmax(predictions, axis=1)\n",
+    "\n",
+    "\n",
+    "true_labels = np.concatenate([\n",
+    "    label_batch.numpy() for _, label_batch in test_dataset\n",
+    "], axis=0)\n",
+    "\n",
+    "df = pd.DataFrame({\n",
+    "    'label_true': true_labels,\n",
+    "    'label_pred': pred_labels\n",
+    "})\n",
+    "\n",
+    "df.head(10)"
+   ]
+  }
+ ],
+ "metadata": {
+  "accelerator": "TPU",
+  "colab": {
+   "provenance": []
+  },
+  "kernelspec": {
+   "display_name": "Python 3",
+   "language": "python",
+   "name": "python3"
+  },
+  "language_info": {
+   "name": "python",
+   "pygments_lexer": "ipython3"
+  }
+ },
+ "nbformat": 4,
+ "nbformat_minor": 5
+}

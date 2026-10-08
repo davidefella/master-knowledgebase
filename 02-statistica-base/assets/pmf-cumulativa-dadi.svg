@@ -1,0 +1,85 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 716" width="1000" height="716" font-family="Inter, system-ui, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif">
+<rect width="1000" height="716" fill="#FFFFFF"/>
+<text x="40" y="42" font-size="16" font-weight="700" fill="#232A28">1. Funzione di probabilit&#224; p(a) &#8212; quanto vale ogni singolo risultato</text>
+<line x1="95" y1="300.0" x2="955" y2="300.0" stroke="#E6E9E6" stroke-width="1"/>
+<text x="83" y="300.0" dy=".35em" text-anchor="end" font-size="12" fill="#6B7671">0</text>
+<line x1="95" y1="223.3" x2="955" y2="223.3" stroke="#E6E9E6" stroke-width="1"/>
+<text x="83" y="223.3" dy=".35em" text-anchor="end" font-size="12" fill="#6B7671">2/36</text>
+<line x1="95" y1="146.7" x2="955" y2="146.7" stroke="#E6E9E6" stroke-width="1"/>
+<text x="83" y="146.7" dy=".35em" text-anchor="end" font-size="12" fill="#6B7671">4/36</text>
+<line x1="95" y1="70.0" x2="955" y2="70.0" stroke="#E6E9E6" stroke-width="1"/>
+<text x="83" y="70.0" dy=".35em" text-anchor="end" font-size="12" fill="#6B7671">6/36</text>
+<line x1="95" y1="300" x2="955" y2="300" stroke="#C3C9C4" stroke-width="1.5"/>
+<line x1="95.0" y1="300" x2="95.0" y2="261.7" stroke="#2F6BD8" stroke-width="2" opacity=".45"/>
+<circle cx="95.0" cy="261.7" r="6.5" fill="#2F6BD8"/>
+<text x="95.0" y="322" text-anchor="middle" font-size="13" font-weight="700" fill="#232A28">2</text>
+<line x1="181.0" y1="300" x2="181.0" y2="223.3" stroke="#2F6BD8" stroke-width="2" opacity=".45"/>
+<circle cx="181.0" cy="223.3" r="6.5" fill="#2F6BD8"/>
+<text x="181.0" y="322" text-anchor="middle" font-size="13" font-weight="700" fill="#232A28">3</text>
+<line x1="267.0" y1="300" x2="267.0" y2="185.0" stroke="#2F6BD8" stroke-width="2" opacity=".45"/>
+<circle cx="267.0" cy="185.0" r="6.5" fill="#2F6BD8"/>
+<text x="267.0" y="322" text-anchor="middle" font-size="13" font-weight="700" fill="#232A28">4</text>
+<line x1="353.0" y1="300" x2="353.0" y2="146.7" stroke="#2F6BD8" stroke-width="2" opacity=".45"/>
+<circle cx="353.0" cy="146.7" r="6.5" fill="#2F6BD8"/>
+<text x="353.0" y="322" text-anchor="middle" font-size="13" font-weight="700" fill="#232A28">5</text>
+<line x1="439.0" y1="300" x2="439.0" y2="108.3" stroke="#2F6BD8" stroke-width="2" opacity=".45"/>
+<circle cx="439.0" cy="108.3" r="6.5" fill="#2F6BD8"/>
+<text x="439.0" y="322" text-anchor="middle" font-size="13" font-weight="700" fill="#232A28">6</text>
+<line x1="525.0" y1="300" x2="525.0" y2="70.0" stroke="#2F6BD8" stroke-width="2" opacity=".45"/>
+<circle cx="525.0" cy="70.0" r="6.5" fill="#2F6BD8"/>
+<text x="525.0" y="322" text-anchor="middle" font-size="13" font-weight="700" fill="#232A28">7</text>
+<line x1="611.0" y1="300" x2="611.0" y2="108.3" stroke="#2F6BD8" stroke-width="2" opacity=".45"/>
+<circle cx="611.0" cy="108.3" r="6.5" fill="#2F6BD8"/>
+<text x="611.0" y="322" text-anchor="middle" font-size="13" font-weight="700" fill="#232A28">8</text>
+<line x1="697.0" y1="300" x2="697.0" y2="146.7" stroke="#2F6BD8" stroke-width="2" opacity=".45"/>
+<circle cx="697.0" cy="146.7" r="6.5" fill="#2F6BD8"/>
+<text x="697.0" y="322" text-anchor="middle" font-size="13" font-weight="700" fill="#232A28">9</text>
+<line x1="783.0" y1="300" x2="783.0" y2="185.0" stroke="#2F6BD8" stroke-width="2" opacity=".45"/>
+<circle cx="783.0" cy="185.0" r="6.5" fill="#2F6BD8"/>
+<text x="783.0" y="322" text-anchor="middle" font-size="13" font-weight="700" fill="#232A28">10</text>
+<line x1="869.0" y1="300" x2="869.0" y2="223.3" stroke="#2F6BD8" stroke-width="2" opacity=".45"/>
+<circle cx="869.0" cy="223.3" r="6.5" fill="#2F6BD8"/>
+<text x="869.0" y="322" text-anchor="middle" font-size="13" font-weight="700" fill="#232A28">11</text>
+<line x1="955.0" y1="300" x2="955.0" y2="261.7" stroke="#2F6BD8" stroke-width="2" opacity=".45"/>
+<circle cx="955.0" cy="261.7" r="6.5" fill="#2F6BD8"/>
+<text x="955.0" y="322" text-anchor="middle" font-size="13" font-weight="700" fill="#232A28">12</text>
+<text x="525.0" y="54.0" text-anchor="middle" font-size="13" font-weight="700" fill="#232A28">6/36</text>
+<text x="95.0" y="245.7" text-anchor="middle" font-size="13" font-weight="700" fill="#232A28">1/36</text>
+<text x="40" y="392" font-size="16" font-weight="700" fill="#232A28">2. Funzione cumulativa F(a) &#8212; quanto vale &#171;fino ad a compreso&#187;</text>
+<line x1="95" y1="650.0" x2="955" y2="650.0" stroke="#E6E9E6" stroke-width="1"/>
+<text x="83" y="650.0" dy=".35em" text-anchor="end" font-size="12" fill="#6B7671">0</text>
+<line x1="95" y1="592.5" x2="955" y2="592.5" stroke="#E6E9E6" stroke-width="1"/>
+<text x="83" y="592.5" dy=".35em" text-anchor="end" font-size="12" fill="#6B7671">0,25</text>
+<line x1="95" y1="535.0" x2="955" y2="535.0" stroke="#E6E9E6" stroke-width="1"/>
+<text x="83" y="535.0" dy=".35em" text-anchor="end" font-size="12" fill="#6B7671">0,50</text>
+<line x1="95" y1="477.5" x2="955" y2="477.5" stroke="#E6E9E6" stroke-width="1"/>
+<text x="83" y="477.5" dy=".35em" text-anchor="end" font-size="12" fill="#6B7671">0,75</text>
+<line x1="95" y1="420.0" x2="955" y2="420.0" stroke="#E6E9E6" stroke-width="1"/>
+<text x="83" y="420.0" dy=".35em" text-anchor="end" font-size="12" fill="#6B7671">1</text>
+<line x1="95" y1="650" x2="955" y2="650" stroke="#C3C9C4" stroke-width="1.5"/>
+<circle cx="95.0" cy="643.6" r="5.5" fill="#22874C"/>
+<text x="95.0" y="672" text-anchor="middle" font-size="13" font-weight="700" fill="#232A28">2</text>
+<circle cx="181.0" cy="630.8" r="5.5" fill="#22874C"/>
+<text x="181.0" y="672" text-anchor="middle" font-size="13" font-weight="700" fill="#232A28">3</text>
+<circle cx="267.0" cy="611.7" r="5.5" fill="#22874C"/>
+<text x="267.0" y="672" text-anchor="middle" font-size="13" font-weight="700" fill="#232A28">4</text>
+<circle cx="353.0" cy="586.1" r="5.5" fill="#22874C"/>
+<text x="353.0" y="672" text-anchor="middle" font-size="13" font-weight="700" fill="#232A28">5</text>
+<circle cx="439.0" cy="554.2" r="5.5" fill="#22874C"/>
+<text x="439.0" y="672" text-anchor="middle" font-size="13" font-weight="700" fill="#232A28">6</text>
+<circle cx="525.0" cy="515.8" r="5.5" fill="#22874C"/>
+<text x="525.0" y="672" text-anchor="middle" font-size="13" font-weight="700" fill="#232A28">7</text>
+<circle cx="611.0" cy="483.9" r="5.5" fill="#22874C"/>
+<text x="611.0" y="672" text-anchor="middle" font-size="13" font-weight="700" fill="#232A28">8</text>
+<circle cx="697.0" cy="458.3" r="5.5" fill="#22874C"/>
+<text x="697.0" y="672" text-anchor="middle" font-size="13" font-weight="700" fill="#232A28">9</text>
+<circle cx="783.0" cy="439.2" r="5.5" fill="#22874C"/>
+<text x="783.0" y="672" text-anchor="middle" font-size="13" font-weight="700" fill="#232A28">10</text>
+<circle cx="869.0" cy="426.4" r="5.5" fill="#22874C"/>
+<text x="869.0" y="672" text-anchor="middle" font-size="13" font-weight="700" fill="#232A28">11</text>
+<circle cx="955.0" cy="420.0" r="5.5" fill="#22874C"/>
+<text x="955.0" y="672" text-anchor="middle" font-size="13" font-weight="700" fill="#232A28">12</text>
+<path d="M52.0,650.0 L95.0,650.0 L95.0,643.6 L138.0,643.6 M138.0,643.6 L181.0,643.6 L181.0,630.8 L224.0,630.8 M224.0,630.8 L267.0,630.8 L267.0,611.7 L310.0,611.7 M310.0,611.7 L353.0,611.7 L353.0,586.1 L396.0,586.1 M396.0,586.1 L439.0,586.1 L439.0,554.2 L482.0,554.2 M482.0,554.2 L525.0,554.2 L525.0,515.8 L568.0,515.8 M568.0,515.8 L611.0,515.8 L611.0,483.9 L654.0,483.9 M654.0,483.9 L697.0,483.9 L697.0,458.3 L740.0,458.3 M740.0,458.3 L783.0,458.3 L783.0,439.2 L826.0,439.2 M826.0,439.2 L869.0,439.2 L869.0,426.4 L912.0,426.4 M912.0,426.4 L955.0,426.4 L955.0,420.0 L998.0,420.0" fill="none" stroke="#22874C" stroke-width="2.6" stroke-linejoin="round"/>
+<text x="955.0" y="406.0" text-anchor="middle" font-size="13" font-weight="700" fill="#232A28">1</text>
+<text x="40" y="700" font-size="13.5" fill="#6B7671">La cumulativa sale a gradini e arriva sempre a 1: sommando tutti i risultati possibili si copre la certezza.</text>
+</svg>

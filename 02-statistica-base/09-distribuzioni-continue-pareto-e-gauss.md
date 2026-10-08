@@ -19,7 +19,7 @@ Da qui si ricava la cumulativa, e derivandola si ottiene la densità (dopo aver 
 $$
 f(x) = \frac{\alpha}{x^{\alpha+1}} \;=\; \text{Par}(\alpha)
 $$
-![](notion-file-block://e2033519-08b3-45a0-9873-3103488ef5f6/5e20bca7-e249-4d35-b9aa-ca411a9bd4c8?space_id=98012abc-808d-816f-9733-00030a2b4817&name=pareto.svg)
+![](assets/pareto.svg)
 ### Perché è diversa dalle altre
 La differenza sta nel modo in cui scende. L'esponenziale del modulo precedente cala **esponenzialmente**, e questo azzera in fretta i valori grandi. Pareto cala come una **potenza**, molto più lentamente.
 > Conseguenza concreta: in una distribuzione di Pareto i casi estremi sono rari ma **non trascurabili**, e spesso pesano più di tutti gli altri messi insieme. È il motivo per cui una piccola quota di persone detiene una parte enorme del reddito totale, e per cui pochi terremoti fortissimi rilasciano più energia di migliaia di scosse piccole.
@@ -55,7 +55,7 @@ $$
 <td>Dice **quanto è larga**: $`\sigma`$ piccola dà una campana stretta e alta</td>
 </tr>
 </table>
-![](notion-file-block://6b3fa1af-2879-4583-b9ca-65016d5f0317/34ac8b22-c4e1-498a-9a0d-eeb8c5ee0fe5?space_id=98012abc-808d-816f-9733-00030a2b4817&name=gauss-f-e-F.svg)
+![](assets/gauss-f-e-F.svg)
 Tre proprietà che si leggono dal disegno:
 - è **simmetrica** attorno a $`\mu`$: scarti in su e in giù sono ugualmente probabili
 - **non tocca mai lo zero**: qualsiasi valore, per quanto lontano, resta possibile — solo sempre meno probabile

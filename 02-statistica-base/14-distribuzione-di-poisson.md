@@ -33,7 +33,7 @@ Perché il modello valga servono tre condizioni, come elencate a lezione:
 ---
 ## Come si costruisce
 L'idea del docente: se non so trattare il continuo, lo **spezzo in tanti pezzetti discreti** che so già trattare.
-![](notion-file-block://4cac00b8-074a-4634-883c-fc50b332c03e/c35a14c3-2e9f-44a6-a4b4-9eff6f1fec73?space_id=98012abc-808d-816f-9733-00030a2b4817&name=17-poisson.svg)
+![](assets/17-poisson.svg)
 Divido l'intervallo $`T`$ in $`n`$ intervallini di durata $`T/n`$. Se sono abbastanza piccoli, dentro ciascuno può esserci **0 oppure 1** reclamo: è una Bernoulli.
 $$
 p_i = \lambda \cdot \frac{T}{n} \qquad\qquad 1 - p_i = 1 - \frac{\lambda T}{n}

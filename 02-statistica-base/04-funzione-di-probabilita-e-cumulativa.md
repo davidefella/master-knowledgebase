@@ -116,7 +116,7 @@ Tre proprietà che si leggono direttamente:
 - **sale a gradini**: fra un valore possibile e il successivo non cambia nulla
 ---
 ## Le due funzioni a confronto
-![](notion-file-block://bc3c531c-cf82-43d1-90ef-c7d6b3fe3c4e/3fcc02b9-624a-477d-81af-0d1a41dc4679?space_id=98012abc-808d-816f-9733-00030a2b4817&name=pmf-cumulativa-dadi.svg)
+![](assets/pmf-cumulativa-dadi.svg)
 Stesso fenomeno, due letture. In alto quanto pesa **ogni singolo** risultato; in basso quanto pesa **tutto ciò che sta fino lì**. L'altezza di ogni gradino della seconda è esattamente il punto corrispondente della prima.
 ---
 ## Riepilogo

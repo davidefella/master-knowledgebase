@@ -23,7 +23,7 @@ $$
 > È il fatto chiave: la media di tanti dati **balla meno** dei singoli dati. Con 100 osservazioni oscilla dieci volte meno che con una sola.
 ---
 ## Legge dei grandi numeri
-![](notion-file-block://56b92e61-efa8-4df0-a6fc-ac55dced332d/0720871b-47ca-4c2e-8753-5217c0b3d727?space_id=98012abc-808d-816f-9733-00030a2b4817&name=18-grandi-numeri.svg)
+![](assets/18-grandi-numeri.svg)
 In formula: fissato uno scarto $`\varepsilon`$ piccolo a piacere, la probabilità che la media dei dati sia lontana da $`\mu`$ più di $`\varepsilon`$ tende a zero.
 $$
 \lim_{n \to \infty} P\big(|\bar{X}_n - \mu| > \varepsilon\big) = 0

@@ -1,0 +1,593 @@
+{
+ "cells": [
+  {
+   "cell_type": "markdown",
+   "metadata": {},
+   "source": [
+    "# Giornata 1 — API low-level dei tensori (ricostruito)\n",
+    "\n",
+    "Ricostruito dai frame del video: a lezione il docente lavorava su `10-06-2025.ipynb`,\n",
+    "notebook costruito dal vivo e **mai distribuito** nel materiale del corso.\n",
+    "\n",
+    "Le celle marcate **ERRORE ATTESO** devono fallire: sono gli errori che il docente\n",
+    "dimostra apposta. Se falliscono altre celle, la trascrizione e' da correggere."
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "metadata": {},
+   "source": [
+    "## 22. Ricostruzione dell'ambiente e apertura sui tensori"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "import tensorflow as tf\n",
+    "import numpy as np"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "tf.config.get_visible_devices()"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "# variables, data types (tensor)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "row, col = 3, 3"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "metadata": {},
+   "source": [
+    "## 23. Creare un tensore: shape e dtype"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "# zeros\n",
+    "zeros = tf.zeros(\n",
+    "    shape=[row, col],\n",
+    "    dtype=tf.float32\n",
+    ")\n",
+    "zeros"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "metadata": {},
+   "source": [
+    "## 24. Tensori precompilati: zeros, ones, constant, fill, zeros_like"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "# ones\n",
+    "ones = tf.ones([row, col])\n",
+    "ones"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "constant = tf.constant([\n",
+    "    [2, 2, 2],\n",
+    "    [2, 2, 2],\n",
+    "    [2, 2, 2]\n",
+    "], dtype=tf.float32)\n",
+    "constant"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "constant.shape"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "constant.dtype"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "filled = tf.fill(\n",
+    "    [row, col],\n",
+    "    2.0\n",
+    ")\n",
+    "filled"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "zeros_like = tf.zeros_like(constant)\n",
+    "zeros_like"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "list(constant.shape)"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "metadata": {},
+   "source": [
+    "## 25. linspace e range"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "# linear space\n",
+    "linear_space = tf.linspace(\n",
+    "    start=0.0,\n",
+    "    stop=1.0,\n",
+    "    num=10\n",
+    ")\n",
+    "linear_space"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "range_tns = tf.range(\n",
+    "    start=0,\n",
+    "    limit=1,\n",
+    "    delta=0.1111\n",
+    ")\n",
+    "range_tns"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "metadata": {},
+   "source": [
+    "## 26. Tensori casuali e a cosa servono"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "# random normals\n",
+    "random_normal_tns = tf.random.normal(\n",
+    "    shape=[row, col],\n",
+    "    mean=0.0,\n",
+    "    stddev=1.0\n",
+    ")\n",
+    "random_normal_tns"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "# random uniform in a set\n",
+    "random_uniform = tf.random.uniform(\n",
+    "    shape=[row, col],\n",
+    "    minval=0,\n",
+    "    maxval=10\n",
+    ")\n",
+    "random_uniform"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "metadata": {},
+   "source": [
+    "## 28. reshape, squeeze, expand_dims"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "a = tf.range(row * col - 1)\n",
+    "a.shape"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "# [ERRORE ATTESO: InvalidArgumentError]\n",
+    "b = tf.reshape(\n",
+    "    a,\n",
+    "    (row, col)\n",
+    ")\n",
+    "b"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "sx = tf.random.normal([1, 10, 1, 30])\n",
+    "sx.shape"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "sx_squeezed = tf.squeeze(sx)\n",
+    "sx_squeezed.shape"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "sx_expanded = tf.expand_dims(\n",
+    "    sx_squeezed,\n",
+    "    axis=1\n",
+    ")\n",
+    "sx_expanded.shape"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "sx_original = tf.expand_dims(\n",
+    "    sx_expanded,\n",
+    "    axis=0\n",
+    ")\n",
+    "sx_original.shape"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "sx.numpy() == sx_original.numpy()"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "metadata": {},
+   "source": [
+    "## 29. transpose e tile"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "tb = tf.random.normal(\n",
+    "    [100, 64, 51]\n",
+    ")\n",
+    "tb.shape"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "tb_transposed = tf.transpose(\n",
+    "    tb,\n",
+    "    perm=[1, 2, 0]\n",
+    ")\n",
+    "tb_transposed.shape"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "# tiles (extra)\n",
+    "tile = tf.constant([[1, 2], [3, 4]])\n",
+    "tile"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "tiled = tf.tile(\n",
+    "    tile,\n",
+    "    [2, 2]\n",
+    ")\n",
+    "tiled.numpy()"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "metadata": {},
+   "source": [
+    "## 30. Costanti e variabili: mutabilità e derivazione automatica"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "ca = tf.constant(2)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "# [ERRORE ATTESO: AttributeError]\n",
+    "ca.assign(4)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "cv = tf.Variable(2)\n",
+    "cv.numpy()"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "cv.assign(4)\n",
+    "cv.numpy()"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "id(ca)"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "metadata": {},
+   "source": [
+    "## 31. Operazioni fra tensori: matmul contro multiply"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "# operations\n",
+    "\n",
+    "a = tf.constant([[1,2], [3,4]])\n",
+    "b = tf.constant([[5,6], [7, 8]])\n",
+    "c = tf.matmul(a, b)\n",
+    "c.numpy()"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "ec = tf.multiply(a,b)\n",
+    "ec"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "metadata": {},
+   "source": [
+    "# [CELLA MANCANTE - illeggibile nei frame]\n",
+    "# A TF-02 @ 00:49:00 il docente sta scrivendo 'mm = tf.constant()' ma la cella e' ancora\n",
+    "# vuota; a 00:49:49 la vista e' gia' scrollata sul traceback. Gli argomenti non compaiono\n",
+    "# in nessun frame disponibile.\n",
+    "# Cio' che si deduce dall'errore: mm NON e' quadrata, perche' matmul(mm, mm) fallisce con\n",
+    "# 'Matrix size-incompatible'. Il valore esatto non e' ricostruibile: va riguardato il video\n",
+    "# a TF-02 @ 00:49:00-00:49:49.\n",
+    "mm = tf.constant([[1, 2, 3], [4, 5, 6]])   # SEGNAPOSTO, non e' il valore usato a lezione"
+   ],
+   "execution_count": null,
+   "outputs": []
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "# [ERRORE ATTESO: InvalidArgumentError]\n",
+    "mmprod = tf.matmul(\n",
+    "    mm, mm\n",
+    ")"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "mm = tf.transpose(mm)"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "metadata": {},
+   "source": [
+    "## 32. tf.math, i tipi, e perché non mescolare NumPy e TensorFlow"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "# [ERRORE ATTESO: InvalidArgumentError]\n",
+    "sq = tf.math.sqrt(a)\n",
+    "sq"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "## tf.math\n",
+    "\n",
+    "a = tf.constant([1,2,3], dtype=tf.float32)\n",
+    "# b = tf.constant([4,5,6])"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "sq = tf.math.sqrt(a)\n",
+    "sq"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "metadata": {},
+   "source": [
+    "## 33. gather e scatter: selezionare e aggiornare"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "## tensor dim (8,10,5) 8-modulo, 10-studenti, 5 matiere\n",
+    "\n",
+    "scores = tf.random.uniform(\n",
+    "    (8, 10, 5),\n",
+    "    minval=0,\n",
+    "    maxval=31,\n",
+    "    dtype=tf.int32\n",
+    ")\n",
+    "scores"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "# scores per gli studenti first and third modules\n",
+    "modules_index_g = [0, 2]\n",
+    "g_scores = tf.gather(\n",
+    "    scores,\n",
+    "    indices=modules_index_g,\n",
+    "    axis=1\n",
+    ")"
+   ]
+  }
+ ],
+ "metadata": {
+  "kernelspec": {
+   "display_name": "Python 3",
+   "language": "python",
+   "name": "python3"
+  },
+  "language_info": {
+   "name": "python"
+  }
+ },
+ "nbformat": 4,
+ "nbformat_minor": 5
+}

@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 265" width="1000" height="265" font-family="Inter, system-ui, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif"><style>
+ .t{font-size:15px;font-weight:700}
+ .c{font-size:13px;fill:#616D68}
+ .n{font-size:15px;font-weight:700;fill:#232A28}
+ .h{font-size:17px;font-weight:700}
+</style><rect width="1000" height="265" fill="#FFFFFF"/>
+<rect x="20" y="52" width="290" height="150" rx="12" fill="#F7F7F5" stroke="#D5D9D6" stroke-width="2"/>
+<text x="165" y="38" text-anchor="middle" class="t" fill="#C0392B">&#10007; si sovrappongono</text>
+<ellipse cx="120" cy="127" rx="72" ry="52" fill="#CFE0FB" fill-opacity=".75" stroke="#2F6BD8" stroke-width="2.4"/>
+<ellipse cx="210" cy="127" rx="72" ry="52" fill="#CFEBD9" fill-opacity=".75" stroke="#22874C" stroke-width="2.4"/>
+<circle cx="165" cy="127" r="18" fill="#fff" stroke="#C0392B" stroke-width="2.4"/><text x="165" y="127" dy=".35em" text-anchor="middle" class="n">4</text>
+<text x="165" y="228" text-anchor="middle" class="c">il 4 starebbe in due gruppi</text>
+<rect x="355" y="52" width="290" height="150" rx="12" fill="#F7F7F5" stroke="#D5D9D6" stroke-width="2"/>
+<text x="500" y="38" text-anchor="middle" class="t" fill="#C0392B">&#10007; lasciano scoperto</text>
+<ellipse cx="430" cy="127" rx="50" ry="50" fill="#CFE0FB" fill-opacity=".75" stroke="#2F6BD8" stroke-width="2.4"/>
+<ellipse cx="570" cy="127" rx="50" ry="50" fill="#CFEBD9" fill-opacity=".75" stroke="#22874C" stroke-width="2.4"/>
+<circle cx="500" cy="127" r="18" fill="#fff" stroke="#C0392B" stroke-width="2.4"/><text x="500" y="127" dy=".35em" text-anchor="middle" class="n">4</text>
+<text x="500" y="228" text-anchor="middle" class="c">il 4 non starebbe in nessun gruppo</text>
+<rect x="690" y="52" width="290" height="150" rx="12" fill="#F7F7F5" stroke="#D5D9D6" stroke-width="2"/>
+<text x="835" y="38" text-anchor="middle" class="t" fill="#22874C">&#10003; partizione</text>
+<rect x="700" y="70" width="88" height="114" rx="9" fill="#CFE0FB" stroke="#2F6BD8" stroke-width="2.4"/><text x="744" y="134" text-anchor="middle" class="h" fill="#2F6BD8">H<tspan font-size="12" dy="4">1</tspan></text>
+<rect x="796" y="70" width="88" height="114" rx="9" fill="#CFEBD9" stroke="#22874C" stroke-width="2.4"/><text x="840" y="134" text-anchor="middle" class="h" fill="#22874C">H<tspan font-size="12" dy="4">2</tspan></text>
+<rect x="892" y="70" width="78" height="114" rx="9" fill="#FBEAC8" stroke="#A8760F" stroke-width="2.4"/><text x="931" y="134" text-anchor="middle" class="h" fill="#A8760F">H<tspan font-size="12" dy="4">3</tspan></text>
+<text x="835" y="228" text-anchor="middle" class="c">ogni esito in uno e un solo gruppo</text>
+</svg>
