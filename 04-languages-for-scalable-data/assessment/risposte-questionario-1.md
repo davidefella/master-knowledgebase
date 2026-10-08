@@ -1,0 +1,39 @@
+# Risposte Questionario 1
+
+> Fonte Notion: https://app.notion.com/p/3de12abc808d81c59bc8c239b35ccede — ultima modifica 2026-09-19T14:14:41.661Z
+
+---
+### 1. Discuss the main differences between predictive and prescriptive analysis.
+L'analisi predittiva risponde alla domanda "cosa succederà?": partendo da dati storici, usa machine learning, forecasting e pattern matching per stimare eventi futuri e la loro probabilità. L'analisi prescrittiva fa un passo in più e risponde a "cosa conviene fare?": presuppone la previsione e valuta le azioni possibili e le loro conseguenze, con simulazione, analisi what-if, complex event processing e recommendation engine. L'output della predittiva è una stima, quello della prescrittiva una decisione o una raccomandazione, anche applicata in automatico. 
+*Esempio:* negli scacchi, la predittiva stima dallo storico di un avversario quale apertura giocherà o con che probabilità vincerà da una certa posizione; la prescrittiva, come fa un motore di analisi, simula le conseguenze delle mosse possibili e indica la migliore da giocare.
+### 2. What is prescriptive analysis particularly useful for?
+È utile quando bisogna scegliere tra molte alternative e valutarne le conseguenze prima di agire: ottimizzazione di prezzi e campagne di marketing, raccomandazioni personalizzate, pianificazione delle risorse, sistemi che reagiscono in automatico agli eventi.
+*Un caso dal mio lavoro:* con il mio team abbiamo sviluppato un'integrazione che sincronizza periodicamente da un sistema esterno le corse soppresse di una rete di autobus. Un passo prescrittivo naturale sarebbe agire in automatico su quel dato: avvisare i passeggeri con notifiche push, proporre corse alternative, riassegnare i mezzi. Il rischio qui è la qualità del dato a monte, perché un feed in ritardo o errato farebbe partire comunicazioni o riassegnazioni sbagliate su larga scala, senza che nessuno le verifichi.
+### 3. Define scalability. Where has it proved particularly useful over the last few years?
+La scalabilità è la capacità di un sistema di gestire una quantità di lavoro crescente aggiungendo risorse, mantenendo prestazioni adeguate; si distingue tra strong scaling, lo stesso problema in meno tempo, e weak scaling, problemi più grandi nello stesso tempo. 
+Negli ultimi anni è stata decisiva per i servizi a scala web e il cloud, e per l'addestramento dei modelli di AI generativa. *Esempio:* Amazon, nata a metà anni '90 come libreria online, per sostenere la propria crescita ha costruito l'infrastruttura che poi è diventata AWS.
+### 4. Provide examples of Scaling-out and Scaling-up approaches
+Lo scale-up (verticale) consiste nel potenziare la singola macchina mentre lo scale-out (orizzontale) nell'aggiungere repliche di macchine, in genere dietro un bilanciatore di carico. È come sostituire un barista con uno più veloce oppure assumerne tre, che però devono coordinarsi per usare la stessa macchina del caffè. 
+Nei progetti enterprise su cui lavoro usiamo entrambi: i microservizi scalano orizzontalmente su Kubernetes, che aumenta il numero di repliche in base al carico, mentre il database, più difficile da distribuire, si scala di solito verticalmente, assegnandogli più risorse sul cloud.
+### 5. Which one between scaling-out and scaling up is better for data science and why?
+Non c'è una risposta assoluta anche se lo scale-up è spesso la prima scelta poiché non aggiunge infrastruttura, evita la rete e la complessità della distribuzione, e molti dataset stanno in memoria su un server con molti core o una GPU. Il limite qui è fisico (o economico). Lo scale-out diventa necessario quando dati o modelli non entrano in un nodo, o quando servono tolleranza ai guasti e throughput a scala web. Il prezzo è che linguaggi, algoritmi e applicazioni devono essere pensati per distribuire il lavoro. In sintesi: scale-up finché basta, scale-out quando dati o carico lo impongono.
+### 6. Computational complexity of an algorithm and scalability, what the relationship?
+La complessità descrive come crescono le risorse necessarie (tempo e memoria) all'aumentare dell'input mentre la scalabilità dice se aggiungere risorse compensa quella crescita. Un algoritmo inefficiente può funzionare su un prototipo con pochi dati e bloccarsi sui dati reali. Il parallelismo divide il tempo al più per il numero di unità, quindi non cambia la classe di complessità: mille core non rendono trattabile una forza bruta esponenziale. 
+### 7. What is design abstracion? Is it useful or not to scalability? Provide examples.
+L'astrazione di progetto nasconde i dettagli dietro interfacce stabili, così che le decisioni fondamentali non siano cablate in tanti punti del codice. È essenziale per la scalabilità architetturale perché un programma con poca astrazione è fragile e, quando crescono i requisiti o deve girare in un ambiente diverso, per esempio distribuito, va riscritto. 
+*Esempi:* classi e moduli che incapsulano i dati; un livello di accesso ai dati (repository o DAO) che permette di passare da un file CSV a un database toccando un solo componente; una pipeline di scikit-learn con passi sostituibili. Come per ogni scelta di progetto ha un costo, soprattutto se abusata, come gerarchie di ereditarietà troppo profonde.
+*Un caso dal mio lavoro:* in un progetto Spring Boot ho dovuto integrare un servizio esterno che esponeva dati in XML. Il client HTTP e la conversione dei dati sono stati implementati dietro un'interfaccia, mentre il resto dell'applicazione lavorava solo su oggetti di dominio. Così un cambio di formato del fornitore o del client HTTP tocca solo quell'adattatore, non la logica di business.
+### 8. What are the main distinctive factors of a Programming Language?
+I fattori principali per cui cataloghiamo i linguaggi di programmazione sono: 
+- il paradigma (imperativo, a oggetti, funzionale, logico); 
+- i tipi (statico o dinamico, forte o debole, con o senza inferenza); 
+- la gestione della memoria (manuale, garbage collector, ownership come in Rust); 
+- il modello di esecuzione (compilato, interpretato, bytecode su macchina virtuale, JIT); 
+- il supporto a concorrenza e parallelismo; 
+- le garanzie di safety, come i controlli sui limiti degli array;
+- altri fattori non tecnici: librerie, strumenti, licenza di utilizzo, community e supporto al codice legacy.
+### 9. What is the main difference between a scalable PL and a non scalable one? Please provide examples.
+Un linguaggio è scalabile se la difficoltà di scrivere ed estendere un programma cresce circa linearmente con la sua dimensione (in uno non scalabile cresce molto più in fretta). Aiutano garbage collection o memoria sicura, tipi statici, moduli, controlli a runtime e concorrenza nativa. 
+Ad esempio, Java è progettato per scalare su progetti enterprise-grade: tipi statici, GC, JVM, thread nativi. Il C è efficiente ma lascia allo sviluppatore puntatori e memoria, e i programmi grandi diventano difficili da mantenere. Python è ottimo per prototipi e scripting, ma tipizzazione dinamica e GIL lo rendono poco adatto a codice grande o parallelo senza librerie scritte in altri linguaggi.
+### 10. What are the fundamental ingredients to study and address Data Science problems?
+La data science è multidisciplinare: servono matematica e statistica, informatica e intelligenza artificiale, e conoscenza del dominio. Il processo va dalla progettazione e raccolta dei dati all'analisi, lungo i livelli descrittivo, diagnostico, predittivo e prescrittivo. Poiché i calcolatori hanno risorse finite, serve anche saper scegliere strumenti e linguaggi adatti per analizzare i dati in tempi utili.<br>Aggiungo personalmente due qualità non tecniche: la curiosità verso il dominio che si analizza e la capacità di collegare elementi che non sembrano correlati, il *lateral thinking* citato a lezione.
