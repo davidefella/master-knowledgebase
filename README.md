@@ -11,6 +11,7 @@ Materiale rielaborato e integrato del Master in Data Analytics (Roma Tre), migra
 5. [Cryptography I](05-cryptography-i/README.md)
 6. [Cybersecurity, Cyber Intelligence and Data Privacy](06-cybersecurity-cyber-intelligence-data-privacy/README.md)
 7. [Biotech Data Processing](07-biotech-data-processing/README.md)
+8. [Digital Identities and Trust Services](08-digital-identities-and-trust-services/README.md)
 
 ## Note sulla migrazione
 
