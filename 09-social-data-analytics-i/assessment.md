@@ -39,7 +39,9 @@ Ciascuna è "ispirata a una sezione" del tutorial `Sentiment_mining_Twitter.ipyn
 - Cambiare le soglie di VADER e TextBlob, anche per ridurre a due classi e rendere equo il confronto con la ground truth (SD-08 @ 00:57:06).
 - Arricchire la regex delle emoticon (es. `T_T`) (SD-08 @ 00:25:00).
 
-> **Nota aggiunta:** il capitolo 06 documenta due difetti del preprocessing del tutorial, verificati per esecuzione: le negazioni contratte (*don't*, *isn't*) vengono perse e `:D`/`XD` non sono riconosciute perché `lower()` è applicato prima. Correggerli è un miglioramento naturale per #SDA1 e #SDA2.
+## Possibili miglioramenti non suggeriti dalla docente
+
+> **Nota aggiunta:** rieseguendo il tutorial, il capitolo 06 ha trovato due difetti del preprocessing: le negazioni contratte (*don't*, *isn't*) vengono perse e `:D`/`XD` non sono riconosciute perché `lower()` è applicato prima. A lezione Mele non ne parla e non li propone come lavoro. Correggerli è comunque un miglioramento sensato per #SDA1 e #SDA2, vicino al suo spunto sulla regex delle emoticon.
 
 ## Da chiarire con la docente o la segreteria
 
