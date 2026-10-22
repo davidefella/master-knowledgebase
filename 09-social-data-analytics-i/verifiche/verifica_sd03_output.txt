@@ -1,0 +1,64 @@
+== [1] In-degree e out-degree (grafo della slide 'In- and Out-Degree')
+nodo rosso: in-degree = 1  out-degree = 3
+vicini del nodo rosso (in+out, senza duplicati): ['A', 'C', 'G', 'U']
+in-degree per nodo : {'A': 1, 'B': 1, 'C': 5, 'E': 2, 'F': 2, 'G': 3, 'R': 1, 'T': 1, 'U': 1}
+out-degree per nodo: {'A': 3, 'B': 2, 'C': 2, 'E': 0, 'F': 1, 'G': 2, 'R': 3, 'T': 1, 'U': 3}
+somma in = somma out = numero archi: 17 17 17
+
+== [2] Coda e testa di un arco in NetworkX
+arco (x, y): origine (tail nella convenzione standard) = x, destinazione (head) = y
+successori di x: ['y']  predecessori di y: ['x']
+
+== [3] Grafo pesato: pesi = ritardo, archi assenti = infinito (Figura 2.1)
+S -> A -> N2 -> D = 65
+S -> A -> N2 -> N3 -> D = inf
+S -> N2 -> D = 38
+S -> N2 -> N3 -> D = inf
+S -> N3 -> D = 24
+S -> N1 -> N3 -> D = inf
+Dijkstra: S -> N3 -> D ritardo 24
+
+== [4] Completezza: L = N(N-1)/2 archi non diretti
+N=3: L=3  (complete_graph ha 3 archi)
+N=4: L=6  (complete_graph ha 6 archi)
+N=10: L=45  (complete_graph ha 45 archi)
+N=1000: L=499500
+diretto completo (N=4): 12 = N(N-1)
+
+== [5] Legge di Metcalfe
+n=2: valore per utente ~ n-1 = 1; valore della rete ~ n(n-1)/2 = 1
+n=3: valore per utente ~ n-1 = 2; valore della rete ~ n(n-1)/2 = 3
+n=10: valore per utente ~ n-1 = 9; valore della rete ~ n(n-1)/2 = 45
+n=100: valore per utente ~ n-1 = 99; valore della rete ~ n(n-1)/2 = 4950
+
+== [6] Snowball sampling con BFS (profondità 3)
+nodi per distanza dal centro: {0: 1, 1: 54, 2: 185, 3: 401}
+sottografo: 641 nodi, 640 archi
+campione casuale della stessa taglia: 641 nodi, 25 archi
+
+== [7] Coefficiente di clustering locale (esempio della slide, Figura 2.6)
+k_i = 5, n_i = 4, k_i(k_i-1) = 20, C_i = 4/20 = 0.2
+networkx nx.clustering(DiGraph) (formula di Fagiolo, diversa): 0.1786
+versione non diretta: 3 archi fra vicini / 10 possibili = 0.3; nx.clustering = 0.3
+
+== [8] Rewiring che conserva in- e out-degree (Figura 2.9)
+prima : [('A', 'C'), ('B', 'D')] ({'A': 0, 'C': 1, 'B': 0, 'D': 1}, {'A': 1, 'C': 0, 'B': 1, 'D': 0})
+dopo  : [('A', 'D'), ('B', 'C')] ({'A': 0, 'D': 1, 'B': 0, 'C': 1}, {'A': 1, 'D': 0, 'B': 1, 'C': 0})
+sulla lista di archi: out-degree identici: True  in-degree identici: True
+dopo lo scambio: 18 self-loop e 94 archi doppi su 19982 (scartati nel DiGraph)
+clustering medio (formula del libro): originale 0.2120, rewired 0.0084, rapporto 25x
+
+== [9] Assortatività e 'i tuoi amici sono più popolari di te'
+coefficiente di assortatività (Newman) BA: -0.0344
+quota di nodi con grado medio dei vicini > proprio grado: 0.906
+grado: media 6.00, mediana 4, max 323
+
+== [10] Urna di Pólya / preferential attachment (Listing 2.5, porting Python 3)
+Listing 2.5 (ROUNDS=10000, P=0.2): 1981 cestini, 10001 palline; cestini con 1,2,3 palline: 1086, 340, 159; max 1652
+p=0.1: cestini=400399, max=985369, alpha stimato [xmin=10: 2.081, xmin=100: 2.099], teorico 1+1/(1-p)=2.111
+p=0.2: cestini=799802, max=329310, alpha stimato [xmin=10: 2.210, xmin=100: 2.257], teorico 1+1/(1-p)=2.250
+p=0.5: cestini=1999388, max=2373, alpha stimato [xmin=10: 2.868, xmin=40: 2.946], teorico 1+1/(1-p)=3.000
+p=0.8: cestini=3199410, max=45, alpha stimato [xmin=4: 4.174, xmin=12: 5.253], teorico 1+1/(1-p)=6.000
+Barabási-Albert m=1, n=200000: alpha stimato = 2.855 (atteso 3)
+senza preferential attachment (p=0.2): max palline=61, con PA max=329310
+figura salvata: polya_powerlaw.png

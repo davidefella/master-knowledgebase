@@ -1,0 +1,73 @@
+=== 1. Tokenizzazione della slide 'Let's tokenize! Isn't this easy?'
+spazi       : ["Let's", 'tokenize!', "Isn't", 'this', 'easy?']
+word_tokenize: ['Let', "'s", 'tokenize', '!', 'Is', "n't", 'this', 'easy', '?']
+
+=== 2. PoS di 'Can you help me with the can?'
+[('Can', 'MD'), ('you', 'PRP'), ('help', 'VB'), ('me', 'PRP'), ('with', 'IN'), ('the', 'DT'), ('can', 'MD'), ('?', '.')]
+spaCy: [('Can', 'MD'), ('you', 'PRP'), ('help', 'VB'), ('me', 'PRP'), ('with', 'IN'), ('the', 'DT'), ('can', 'NN'), ('?', '.')]
+possessivi: [('This', 'DT'), ('pen', 'NN'), ('is', 'VBZ'), ('mine', 'JJ'), (',', ','), ('not', 'RB'), ('my', 'PRP$'), ('brother', 'NN'), ("'s", 'POS')]
+
+=== 3. Bag-of-words sulle tre frasi delle slide
+frequenze aggregate (a mano): {'and': 1, 'bus': 1, 'by': 2, 'expensive': 1, 'flight': 2, 'full': 1, 'is': 1, 'jim': 1, 'late': 1, 'pam': 1, 'the': 3, 'train': 1, 'travelled': 1, 'travelling': 1, 'was': 2}
+vocabolario: {'jim': 7, 'and': 0, 'pam': 9, 'travelled': 12, 'by': 2, 'the': 10, 'bus': 1, 'train': 11, 'was': 14, 'late': 8, 'flight': 4, 'full': 5, 'travelling': 13, 'is': 6, 'expensive': 3}
+feature    : ['and', 'bus', 'by', 'expensive', 'flight', 'full', 'is', 'jim', 'late', 'pam', 'the', 'train', 'travelled', 'travelling', 'was']
+[[1 1 1 0 0 0 0 1 0 1 1 0 1 0 0]
+ [0 0 0 0 0 0 0 0 1 0 1 1 0 0 1]
+ [0 0 1 1 2 1 1 0 0 0 1 0 0 1 1]]
+matrice a mano == CountVectorizer: True
+somma per colonna (= tabella aggregata): {'and': np.int64(1), 'bus': np.int64(1), 'by': np.int64(2), 'expensive': np.int64(1), 'flight': np.int64(2), 'full': np.int64(1), 'is': np.int64(1), 'jim': np.int64(1), 'late': np.int64(1), 'pam': np.int64(1), 'the': np.int64(3), 'train': np.int64(1), 'travelled': np.int64(1), 'travelling': np.int64(1), 'was': np.int64(2)}
+document frequency per colonna: {'and': np.int64(1), 'bus': np.int64(1), 'by': np.int64(2), 'expensive': np.int64(1), 'flight': np.int64(1), 'full': np.int64(1), 'is': np.int64(1), 'jim': np.int64(1), 'late': np.int64(1), 'pam': np.int64(1), 'the': np.int64(3), 'train': np.int64(1), 'travelled': np.int64(1), 'travelling': np.int64(1), 'was': np.int64(2)}
+sparsita' (zeri / celle): 26 / 45
+
+=== 4. TF-IDF a mano con la formula della slide (tf = conteggio/lunghezza, idf = ln(N/df))
+doc1 tf  : {'document': 0.2, 'first': 0.2, 'is': 0.2, 'the': 0.2, 'this': 0.2}
+doc1 tfidf: {'document': 0.0, 'first': 0.1386, 'is': 0.0, 'the': 0.0, 'this': 0.0}
+doc2 tf  : {'document': 0.3333, 'is': 0.1667, 'second': 0.1667, 'the': 0.1667, 'this': 0.1667}
+doc2 tfidf: {'document': 0.0, 'is': 0.0, 'second': 0.1155, 'the': 0.0, 'this': 0.0}
+ln(2) = 0.6931  log10(2) = 0.301
+0.20*ln2 = 0.1386   (1/6)*ln2 = 0.1155
+
+=== 5. Stesso esempio con TfidfVectorizer: tre configurazioni
+default (smooth_idf=True, norm='l2') ['document', 'first', 'is', 'second', 'the', 'this']
+  idf_: [1.     1.4055 1.     1.4055 1.     1.    ]
+[[0.4091 0.575  0.4091 0.     0.4091 0.4091]
+ [0.6676 0.     0.3338 0.4691 0.3338 0.3338]]
+{'norm': None} ['document', 'first', 'is', 'second', 'the', 'this']
+  idf_: [1.     1.4055 1.     1.4055 1.     1.    ]
+[[1.     1.4055 1.     0.     1.     1.    ]
+ [2.     0.     1.     1.4055 1.     1.    ]]
+{'norm': None, 'smooth_idf': False} ['document', 'first', 'is', 'second', 'the', 'this']
+  idf_: [1.     1.6931 1.     1.6931 1.     1.    ]
+[[1.     1.6931 1.     0.     1.     1.    ]
+ [2.     0.     1.     1.6931 1.     1.    ]]
+formula slide via sklearn: ['document', 'first', 'is', 'second', 'the', 'this']
+[[0.     0.1386 0.     0.     0.     0.    ]
+ [0.     0.     0.     0.1155 0.     0.    ]]
+
+=== 6. TF-IDF della slide sulle tre frasi (TfidfVectorizer(norm=None))
+[[1.6931 1.6931 1.2877 0.     0.     0.     0.     1.6931 0.     1.6931 1.     0.     1.6931 0.     0.    ]
+ [0.     0.     0.     0.     0.     0.     0.     0.     1.6931 0.     1.     1.6931 0.     0.     1.2877]
+ [0.     0.     1.2877 1.6931 3.3863 1.6931 1.6931 0.     0.     0.     1.     0.     0.     1.6931 1.2877]]
+idf_: {'and': np.float64(1.69314718), 'bus': np.float64(1.69314718), 'by': np.float64(1.28768207), 'expensive': np.float64(1.69314718), 'flight': np.float64(1.69314718), 'full': np.float64(1.69314718), 'is': np.float64(1.69314718), 'jim': np.float64(1.69314718), 'late': np.float64(1.69314718), 'pam': np.float64(1.69314718), 'the': np.float64(1.0), 'train': np.float64(1.69314718), 'travelled': np.float64(1.69314718), 'travelling': np.float64(1.69314718), 'was': np.float64(1.28768207)}
+ln((1+3)/(1+1))+1 = 1.6931471805599454  ln(4/3)+1 = 1.2876820724517808  ln(4/4)+1 = 1.0
+con la normalizzazione di default (l2), riga 1: [0.4107 0.4107 0.3124 0.     0.     0.     0.     0.4107 0.     0.4107 0.2426 0.     0.4107 0.     0.    ]
+
+=== 7. Testo dei tre porcellini: byte contro caratteri
+byte: 679  caratteri letti da open(): 675  CR nel file: 4
+
+=== 8. Stemming delle forme di 'to be' e dei verbi di 'travel' (contro lemmatizzazione)
+Porter  : ['am', 'is', 'are', 'wa', 'were', 'travel', 'travel', 'travel']
+Snowball: ['am', 'is', 'are', 'was', 'were', 'travel', 'travel', 'travel']
+Lemma(v): ['be', 'be', 'be', 'be', 'be', 'travel', 'travel', 'travel']
+
+=== 9. Tokenizzazione della slide (word_tokenize contro RegexpTokenizer)
+['This', 'is', 'an', 'example', 'sentence', '!', 'However', ',', 'it', 'is', "n't", 'a', 'very', 'informative', 'one']
+['This', 'is', 'an', 'example', 'sentence', 'However', 'it', 'isn', 't', 'a', 'very', 'informative', 'one']
+stopword NLTK: 198 prime 20: ['a', 'about', 'above', 'after', 'again', 'against', 'ain', 'all', 'am', 'an', 'and', 'any', 'are', 'aren', "aren't", 'as', 'at', 'be', 'because', 'been']
+
+=== 10. WordNet: da quale senso di 'natural' viene l'antonimo 'sharp'
+natural.a.01 | in accordance with nature; relating to or concerning nature -> unnatural
+natural.a.02 | existing in or produced by nature; not artificial or imitation -> artificial
+natural.a.03 | existing in or in conformity with nature or the observable world; neither supernatural nor magical -> supernatural
+natural.a.05 | (of a musical note) being neither raised nor lowered by one chromatic semitone -> sharp
+Wu-Palmer ship/boat: 0.9090909090909091  LCS: vessel.n.02

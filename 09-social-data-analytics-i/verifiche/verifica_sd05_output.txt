@@ -1,0 +1,102 @@
+numpy 2.5.3 | scipy 1.18.1 | sklearn 1.9.1
+
+=== 1. Cosine similarity, tre forme ===
+0.8895 0.8895 0.8895
+prodotto scalare NON normalizzato: 12
+distanza d = 1 - S: 0.1105
+
+=== 2. Esempio string matching della slide ===
+vocabolario: ['amazing', 'goal', 'match', 'player', 'right', 'scored', 'soccer', 'today']
+cosine(doc1, doc2) = 0.0
+
+=== 3. Good morning! come vettore sparso ===
+dimensione: 1000000 | non zero: 2 | frazione non nulla: 2e-06
+
+=== 4. Disuguaglianza triangolare con d = 1 - cos ===
+d(a,c) = 1.0  d(a,b)+d(b,c) = 0.5858
+
+=== 5. Clustering gerarchico (scipy) ===
+matrice delle distanze (arrotondata):
+[[0.   0.5  0.82 0.67 0.67 1.   1.   1.  ]
+ [0.5  0.   0.82 0.83 0.83 1.   1.   1.  ]
+ [0.82 0.82 0.   0.82 0.82 1.   1.   1.  ]
+ [0.67 0.83 0.82 0.   0.33 1.   1.   1.  ]
+ [0.67 0.83 0.82 0.33 0.   1.   1.   1.  ]
+ [1.   1.   1.   1.   1.   0.   0.6  1.  ]
+ [1.   1.   1.   1.   1.   0.6  0.   1.  ]
+ [1.   1.   1.   1.   1.   1.   1.   0.  ]]
+
+average linkage: 7 merge per N=8 documenti
+  passo 1: soccer + rugby -> C8  altezza=0.333  size=2
+  passo 2: tennis + pingpong -> C9  altezza=0.500  size=2
+  passo 3: politics + foreign -> C10  altezza=0.600  size=2
+  passo 4: C8 + C9 -> C11  altezza=0.750  size=4
+  passo 5: golf + C11 -> C12  altezza=0.817  size=5
+  passo 6: C10 + C12 -> C13  altezza=1.000  size=7
+  passo 7: religion + C13 -> C14  altezza=1.000  size=8
+
+single linkage: 7 merge per N=8 documenti
+  passo 1: soccer + rugby -> C8  altezza=0.333  size=2
+  passo 2: tennis + pingpong -> C9  altezza=0.500  size=2
+  passo 3: politics + foreign -> C10  altezza=0.600  size=2
+  passo 4: C8 + C9 -> C11  altezza=0.667  size=4
+  passo 5: golf + C11 -> C12  altezza=0.817  size=5
+  passo 6: C10 + C12 -> C13  altezza=1.000  size=7
+  passo 7: religion + C13 -> C14  altezza=1.000  size=8
+
+complete linkage: 7 merge per N=8 documenti
+  passo 1: soccer + rugby -> C8  altezza=0.333  size=2
+  passo 2: tennis + pingpong -> C9  altezza=0.500  size=2
+  passo 3: politics + foreign -> C10  altezza=0.600  size=2
+  passo 4: golf + C9 -> C11  altezza=0.817  size=3
+  passo 5: C8 + C11 -> C12  altezza=0.833  size=5
+  passo 6: C10 + C12 -> C13  altezza=1.000  size=7
+  passo 7: religion + C13 -> C14  altezza=1.000  size=8
+
+Taglio del dendrogramma (average linkage):
+  cut height 0.5: 6 cluster, dimensioni [2, 2, 1, 1, 1, 1]
+  cut height 0.7: 5 cluster, dimensioni [2, 2, 2, 1, 1]
+  cut height 0.9: 3 cluster, dimensioni [5, 2, 1]
+  cut height 0.99: 3 cluster, dimensioni [5, 2, 1]
+ordine delle foglie nel dendrogramma: ['religion', 'politics', 'foreign', 'golf', 'soccer', 'rugby', 'tennis', 'pingpong']
+sklearn AgglomerativeClustering (3 cluster): {'tennis': 0, 'pingpong': 0, 'golf': 0, 'soccer': 0, 'rugby': 0, 'politics': 2, 'foreign': 2, 'religion': 1}
+
+=== 6. Distribuzione delle dimensioni dei cluster al variare del taglio ===
+altezze di merge: min 0.087  max 0.995  (N-1 = 1499 merge)
+  cut 0.5: 446 cluster | singleton 135 | max size 32 | media 3.4
+  cut 0.7: 60 cluster | singleton 11 | max size 639 | media 25.0
+  cut 0.9: 25 cluster | singleton 1 | max size 799 | media 60.0
+
+=== 7. Interessi per utente: frequenze relative per rank ===
+  ann: [0.6, 0.2, 0.2]
+  bob: [0.667, 0.333]
+  cid: [1.0]
+  media per rank: {1: 0.756, 2: 0.178, 3: 0.067}
+
+=== 8. LDA (sklearn) su corpus giocattolo ===
+
+random_state=0
+  topic 0: ['storm', 'flooding', 'rain', 'water', 'people']
+  topic 1: ['terrorism', 'police', 'bomb', 'gun', 'victims']
+  topic 2: ['vote', 'parliament', 'minister', 'election', 'referendum']
+  theta (prime 3 righe e due documenti misti):
+    doc  0: [0.05 0.05 0.9 ]
+    doc  3: [0.9  0.05 0.05]
+    doc  6: [0.06 0.89 0.06]
+    doc  9: [0.06 0.39 0.56]
+    doc 10: [0.87 0.06 0.07]
+  hard (argmax): [2, 2, 2, 0, 0, 0, 1, 1, 1, 2, 0]
+  soft (soglia 0.3): [[2], [2], [2], [0], [0], [0], [1], [1], [1], [1, 2], [0]]
+
+random_state=1
+  topic 0: ['vote', 'parliament', 'minister', 'election', 'referendum']
+  topic 1: ['storm', 'flooding', 'rain', 'water', 'weather']
+  topic 2: ['terrorism', 'police', 'bomb', 'gun', 'victims']
+  theta (prime 3 righe e due documenti misti):
+    doc  0: [0.9  0.05 0.05]
+    doc  3: [0.05 0.9  0.05]
+    doc  6: [0.06 0.06 0.89]
+    doc  9: [0.56 0.06 0.39]
+    doc 10: [0.38 0.57 0.06]
+  hard (argmax): [0, 0, 0, 1, 1, 1, 2, 2, 2, 0, 1]
+  soft (soglia 0.3): [[0], [0], [0], [1], [1], [1], [2], [2], [2], [0, 2], [0, 1]]
