@@ -1,0 +1,28 @@
+=== A. Calcoli delle slide ===
+(31+28)/31    = 1.903
+(31+28+31)/31 = 2.903
+mesi ideali da 30 giorni: 60/30 = 2.0, 90/30 = 3.0
+C21 = U2/U1 = 1.629  (slide: 1.6)
+ClueBot NG: 80003 edit in gennaio -> un edit ogni 33.5 s
+EmausBot  : 79357 edit in gennaio -> un edit ogni 33.8 s
+Addbot    : 63136 edit in gennaio -> un edit ogni 42.4 s
+
+=== B. Esponente gamma dai numeri del libro ===
+gamma = -(1 + ln(U2/U1)/ln R21) = -1.872  (libro: -1.87)
+
+=== C. Fit di una power law in log-log (dati sintetici) ===
+media = 22.8, mediana = 1, max = 293388
+OLS su r<=50:        gamma = -1.874, K = 76342
+OLS su tutti i punti: gamma = -0.781  (distorta dalla coda)
+OLS con binning log: gamma = -1.849
+
+=== D. CDF, CCDF ed esponente della coda ===
+rho=  1: CDF = 0.560, CCDF = 0.440, somma = 1.0
+rho= 10: CDF = 0.917, CCDF = 0.083, somma = 1.0
+rho=100: CDF = 0.988, CCDF = 0.012, somma = 1.0
+pendenza della CCDF in log-log = -0.846  (atteso gamma+1 = -0.87)
+
+=== E. r2_bar(r1) e R21 su utenti simulati ===
+utenti attivi: periodo 1 = 225015, periodo 2 = 268254, rapporto = 1.192  (rapporto dei giorni = 1.903)
+r2_bar(r1) per r1 = 1, 10, 50, 100: [  2.1  18.2  93.5 192.8]
+pendenza R21 stimata = 1.903  (tassi costanti: atteso 59/31 = 1.903; Wikipedia: 1.75)
